@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Masater_RoomScene.ma
-//Last modified: Fri, Feb 06, 2026 09:51:04 AM
+//Last modified: Fri, Feb 06, 2026 12:11:59 PM
 //Codeset: 1252
 file -rdi 1 -ns "Long_Table" -rfn "Long_TableRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Long_Table.ma";
@@ -194,17 +194,17 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "B09AD604-4678-D972-05CF-8CA58434408B";
+fileInfo "UUID" "8E2B1E37-4344-9BF2-091B-3C91A7CC53D7";
 createNode transform -s -n "persp";
 	rename -uid "1E0B7250-4257-6A75-2954-AFB1CDBD77E9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 64.761800338917581 29.496995985181158 37.072589771099615 ;
+	setAttr ".t" -type "double3" 49.990109185238914 23.09551893087281 27.770359395769837 ;
 	setAttr ".r" -type "double3" -20.138352729525341 417.79999999964201 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1327068F-4850-88D5-DE64-4C9A3A1FBCBB";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 77.971406244038093;
+	setAttr ".coi" 59.378040277322668;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
