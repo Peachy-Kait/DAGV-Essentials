@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Masater_RoomScene.ma
-//Last modified: Fri, Feb 06, 2026 12:11:59 PM
+//Last modified: Thu, Feb 12, 2026 07:28:30 PM
 //Codeset: 1252
 file -rdi 1 -ns "Long_Table" -rfn "Long_TableRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Long_Table.ma";
@@ -194,17 +194,17 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "8E2B1E37-4344-9BF2-091B-3C91A7CC53D7";
+fileInfo "UUID" "513965D6-47BD-B906-C80B-7989571D0401";
 createNode transform -s -n "persp";
 	rename -uid "1E0B7250-4257-6A75-2954-AFB1CDBD77E9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 49.990109185238914 23.09551893087281 27.770359395769837 ;
+	setAttr ".t" -type "double3" 30.174279604931403 14.50810825116652 15.291665526761484 ;
 	setAttr ".r" -type "double3" -20.138352729525341 417.79999999964201 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1327068F-4850-88D5-DE64-4C9A3A1FBCBB";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 59.378040277322668;
+	setAttr ".coi" 34.435535895963007;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -279,7 +279,7 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 createNode transform -n "pCube2";
 	rename -uid "3E4FF6B5-4C54-8C22-5838-CBBCD3539640";
 	setAttr ".t" -type "double3" 0 -0.21390542354774211 -26.307321560309422 ;
-	setAttr ".r" -type "double3" 90.2577017832525 0 0 ;
+	setAttr ".r" -type "double3" 90.257701783252514 0 0 ;
 	setAttr ".s" -type "double3" 26.148629788175111 0.40584832935645959 26.148629788175111 ;
 	setAttr ".rp" -type "double3" 0 0 13.029861555788919 ;
 	setAttr ".rpt" -type "double3" 0 0 -3.3750779948604759e-14 ;
@@ -4537,15 +4537,15 @@ createNode mesh -n "Bookshelf_Shape1" -p "Bookshelf_1";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "4670FF0B-4A46-E7F9-8D18-338FDE40EB72";
+	rename -uid "4B309A22-492B-3F13-C04D-F3B8979A7D76";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "DEB2A4D3-43DE-3F15-F541-48B6180B895F";
+	rename -uid "B84BCBDB-4418-A336-4032-E69D1D919418";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "F4B5D757-49B4-C934-0B7A-3D800B754369";
+	rename -uid "27648513-4B6D-EA42-9A73-F48B906B8692";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "E133DA15-4435-55B4-DFAB-05B0E3027B35";
+	rename -uid "DEA8AB64-47F0-FDBD-F0C7-CF923B4E5F37";
 	setAttr ".cdl" 5;
 	setAttr -s 6 ".dli[1:5]"  1 2 3 4 5;
 	setAttr -s 6 ".dli";
@@ -4553,7 +4553,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "66A4B722-41BD-7255-FED5-DFBC92A80A48";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "265CF436-4B2E-DA52-01ED-D6AB10F8AC8B";
+	rename -uid "55295978-45D0-129A-80FD-5A874AC6C40D";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "6A4C6A52-438D-05E2-4105-54A4A0419A76";
 	setAttr ".g" yes;
@@ -6993,7 +6993,7 @@ createNode reference -n "Scroll_PileRN2";
 		"Scroll_PileRN2" 4
 		2 "|Scroll_Pile2:Scroll_bundle" "translate" " -type \"double3\" -10.93118715842719979 -8.09840332940120433 -2.94576161397165492"
 		
-		2 "|Scroll_Pile2:Scroll_bundle" "rotate" " -type \"double3\" 0 113.25551134025229771 0"
+		2 "|Scroll_Pile2:Scroll_bundle" "rotate" " -type \"double3\" 0 113.25551134025231192 0"
 		
 		2 "|Scroll_Pile2:Scroll_bundle" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		
@@ -7191,8 +7191,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "Table_and_chairs.di" "Long_TableRN.phl[1]";
 connectAttr "Brokenshelf_Bookshelf_and_books.di" "Broken_Shelf_BookshelfRN.phl[1]"
 		;
