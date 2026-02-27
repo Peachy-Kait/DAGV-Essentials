@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Room_Scene_KSmith.ma
-//Last modified: Fri, Feb 27, 2026 12:24:11 AM
+//Last modified: Fri, Feb 27, 2026 07:34:29 AM
 //Codeset: 1252
 file -rdi 1 -ns "Tavern_Counter_and_Barrel" -rfn "Tavern_Counter_and_BarrelRN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tavern_Counter_and_Barrel.ma";
@@ -107,17 +107,17 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "6A1A4A84-4725-9861-800A-7589F73709E3";
+fileInfo "UUID" "B233DDA0-4B0F-A960-722B-F29758A6CC8E";
 createNode transform -s -n "persp";
 	rename -uid "F2D9500F-4E44-A00F-A358-0986417DAE1A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 45.336212817921492 20.241619314971555 14.656999646820994 ;
-	setAttr ".r" -type "double3" -18.338352729628934 75.400000000000361 0 ;
+	setAttr ".t" -type "double3" 37.79876213855357 20.951217349006377 30.063763496716895 ;
+	setAttr ".r" -type "double3" -17.738352729629089 53.000000000000419 -1.3212343324387159e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2A689A2D-4CEE-EEDD-9F5C-C2A2A1A0CEF2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 46.549162264720103;
+	setAttr ".coi" 46.549162264730157;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
