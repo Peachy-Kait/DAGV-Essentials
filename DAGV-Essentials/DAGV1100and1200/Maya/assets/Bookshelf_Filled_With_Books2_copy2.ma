@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: Bookshelf_Filled_With_Books2_copy.ma
-//Last modified: Thu, Mar 19, 2026 12:45:37 AM
+//Name: Bookshelf_Filled_With_Books2_copy2.ma
+//Last modified: Thu, Mar 19, 2026 12:45:49 AM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "DD283AA8-4184-A5E0-1C19-3FB6051B66CA";
+fileInfo "UUID" "218593BC-45F2-4207-B95E-FCA87825D3E1";
 createNode transform -n "Bookshelf_1";
 	rename -uid "A24C190B-48D3-8CEC-5EB2-648FB0F73B8D";
 	setAttr ".rp" -type "double3" -5.4542262554168701 1.4019752740859985 -6.3740711212158203 ;
@@ -377398,4 +377398,4 @@ connectAttr "BookShape283.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "BookShape284.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "BookShape285.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Book_Shape110.iog" ":initialShadingGroup.dsm" -na;
-// End of Bookshelf_Filled_With_Books2_copy.ma
+// End of Bookshelf_Filled_With_Books2_copy2.ma
