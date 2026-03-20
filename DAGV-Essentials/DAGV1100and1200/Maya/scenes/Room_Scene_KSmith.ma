@@ -1,9 +1,7 @@
 //Maya ASCII 2025ff03 scene
 //Name: Room_Scene_KSmith.ma
-//Last modified: Fri, Mar 20, 2026 08:51:01 AM
+//Last modified: Fri, Mar 20, 2026 11:37:24 AM
 //Codeset: 1252
-file -rdi 1 -ns "Tavern_Counter_and_Barrel" -rfn "Tavern_Counter_and_BarrelRN"
-		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tavern_Counter_and_Barrel.ma";
 file -rdi 1 -ns "Bookshelf_Bottom_Cabinet" -rfn "Bookshelf_Bottom_CabinetRN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Bookshelf_Bottom_Cabinet.ma";
 file -rdi 1 -ns "Long_Table" -rfn "Long_TableRN" -op "v=0;" -typ "mayaAscii"
@@ -35,7 +33,7 @@ file -rdi 1 -ns "Potted_Plant" -rfn "Potted_PlantRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Potted_Plant.ma";
 file -rdi 1 -ns "Scroll_copy" -rfn "Scroll_copyRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Scroll_copy.ma";
-file -r -ns "Tavern_Counter_and_Barrel" -dr 1 -rfn "Tavern_Counter_and_BarrelRN"
+file -rdi 1 -ns "Tavern_Counter_and_Barrel" -rfn "Tavern_Counter_and_BarrelRN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tavern_Counter_and_Barrel.ma";
 file -r -ns "Bookshelf_Bottom_Cabinet" -dr 1 -rfn "Bookshelf_Bottom_CabinetRN" -op
 		 "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Bookshelf_Bottom_Cabinet.ma";
@@ -67,6 +65,8 @@ file -r -ns "Potted_Plant" -dr 1 -rfn "Potted_PlantRN" -op "v=0;" -typ "mayaAsci
 		 "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Potted_Plant.ma";
 file -r -ns "Scroll_copy" -dr 1 -rfn "Scroll_copyRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Scroll_copy.ma";
+file -r -ns "Tavern_Counter_and_Barrel" -dr 1 -rfn "Tavern_Counter_and_BarrelRN"
+		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tavern_Counter_and_Barrel.ma";
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -77,27 +77,27 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "39D77CC7-40E1-D73D-7829-F38BA2FDF41A";
+fileInfo "UUID" "D08D7C8A-4EC3-30E9-B777-48A7523A1718";
 createNode transform -s -n "persp";
 	rename -uid "F2D9500F-4E44-A00F-A358-0986417DAE1A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -5.3113923926653142 5.7117503653796149 -3.5895055204247988 ;
-	setAttr ".r" -type "double3" -6.6000000000014136 47.600000000025119 -1.179201920395891e-15 ;
+	setAttr ".t" -type "double3" 23.004973697918036 26.587137610774846 39.088669946778218 ;
+	setAttr ".r" -type "double3" -21.000000000000959 394.7999999999609 0 ;
 	setAttr ".rpt" -type "double3" 1.2922242560517109e-17 1.1678691528965221e-16 -4.7497438264158663e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2A689A2D-4CEE-EEDD-9F5C-C2A2A1A0CEF2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 2.245780625968921;
+	setAttr ".coi" 60.8092800571441;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 1.294572317553655 -0.73518326767205922 4.1266937240535881 ;
+	setAttr ".tp" -type "double3" -9.6304960818410024 5.1696903705596924 -7.0839775360306128 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "A295E773-4758-D284-60A6-6AB8B22FB838";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 5.9853395034609402 1000.1 -5.4965271678961383 ;
+	setAttr ".t" -type "double3" 1.0091094748381693 1000.1 -0.90083237675629313 ;
 	setAttr ".r" -type "double3" -90 0 0 ;
 createNode camera -s -n "topShape" -p "top";
 	rename -uid "AC4486D2-45FC-3E39-F912-3BAC3CAE97FE";
@@ -4485,8 +4485,548 @@ createNode mesh -n "polySurfaceShape2" -p "Wall4";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+createNode transform -n "Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "19446E0A-42E7-5639-3AEB-B581D648E978";
+	setAttr ".t" -type "double3" -7.61405138586393 -0.18322754697981125 3.5282405247238131 ;
+	setAttr ".r" -type "double3" 0 90 0 ;
+	setAttr ".rp" -type "double3" 4.8492588320186538 1.8223356339886148 -6.1069007278946756 ;
+	setAttr ".sp" -type "double3" 4.8492588320186538 1.8223356339886148 -6.1069007278946756 ;
+createNode transform -n "polySurface1" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "C95768AC-4C16-CD7C-A8FF-BCA7812CA17C";
+createNode transform -n "transform3" -p "|Tavern_Counter_and_Barrel:Counter_Base1|polySurface1";
+	rename -uid "A2B1CF04-40F0-D350-C30B-9B95A7714DB1";
+	setAttr ".v" no;
+createNode mesh -n "polySurfaceShape3" -p "transform3";
+	rename -uid "3FB60DE2-40AD-95E1-C3D6-9099055F9257";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface2" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "3FDFACAC-4FD1-0891-4749-FF9CF45AF9A9";
+createNode transform -n "transform2" -p "polySurface2";
+	rename -uid "BED6CF05-48DA-56D8-251F-BFA908042236";
+	setAttr ".v" no;
+createNode mesh -n "polySurfaceShape4" -p "transform2";
+	rename -uid "BA48B2E9-4A6A-5116-3C71-C98527885102";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface3" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "B890C158-4A3C-857B-9630-799E95C14D5F";
+createNode transform -n "transform6" -p "polySurface3";
+	rename -uid "A9575EDB-4088-5521-FF93-86B3E7AC07F6";
+	setAttr ".v" no;
+createNode mesh -n "polySurfaceShape5" -p "transform6";
+	rename -uid "A21381F4-4ACB-F037-E15B-92AF5F99E803";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface4" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "D868D373-47B4-5DB4-C9A5-7FAF331976FE";
+createNode mesh -n "polySurfaceShape6" -p "polySurface4";
+	rename -uid "92CF6AA8-4DAB-2959-408D-F7BD6313BED7";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface5" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "D63A873F-4AFE-E91E-004C-0AACB410E8AC";
+createNode mesh -n "polySurfaceShape7" -p "polySurface5";
+	rename -uid "B42330C7-4802-2946-75AC-8BB249348D59";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface6" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "AA6A5902-4339-7033-1658-889F5F5B54C3";
+createNode mesh -n "polySurfaceShape8" -p "polySurface6";
+	rename -uid "600BB900-4CA6-C53D-1E24-C7A0EBD1E280";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface7" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "5E1C2014-4095-BC26-F5B6-2E97D27E975A";
+createNode transform -n "transform7" -p "|Tavern_Counter_and_Barrel:Counter_Base1|polySurface7";
+	rename -uid "2FB71892-4B54-736D-CF48-F8901898BB4C";
+	setAttr ".v" no;
+createNode mesh -n "polySurfaceShape9" -p "transform7";
+	rename -uid "D17BCE42-47F0-9D8C-9970-BD9EC10971E0";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface8" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "1AC4F3E9-4BA9-4646-8739-0DA5D36C29D8";
+createNode mesh -n "polySurfaceShape10" -p "polySurface8";
+	rename -uid "6BBED7EB-4E42-173A-3157-E59FAF3B6050";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface9" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "BB041953-4749-1352-AEDD-1A94FC62FBCB";
+createNode mesh -n "polySurfaceShape11" -p "polySurface9";
+	rename -uid "F3FD99A7-4717-64DD-3B61-BEAD1E5703EF";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface10" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "75D58EA4-419B-6744-9BB7-08B064CE153A";
+createNode mesh -n "polySurfaceShape12" -p "polySurface10";
+	rename -uid "C21BBBC7-4072-0CD4-38E0-91B5757FCF99";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface11" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "C2B56015-426E-D60A-08B4-2ABE894D0E5C";
+createNode mesh -n "polySurfaceShape13" -p "polySurface11";
+	rename -uid "FEA1D186-496F-2011-190D-54BCB0E88BBC";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface12" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "5512E475-4A57-2DCB-EA6F-E2A291DFDF74";
+createNode mesh -n "polySurfaceShape14" -p "polySurface12";
+	rename -uid "569050CB-4836-8378-E470-39ABD1712630";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface13" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "3F99CCB1-4115-27B8-8407-9B8399FE9E80";
+createNode mesh -n "polySurfaceShape15" -p "polySurface13";
+	rename -uid "4B5497DD-4C78-3458-18A2-B9ABDD57E0D7";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface14" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "A2A481F3-49A7-CBA9-FA6E-6C9916F76EE9";
+createNode mesh -n "polySurfaceShape16" -p "polySurface14";
+	rename -uid "1FE54732-4116-72DF-C9D4-5DA722F38452";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface15" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "8AABE828-4B0F-FE8C-FC49-4CBE92686CFA";
+createNode mesh -n "polySurfaceShape17" -p "polySurface15";
+	rename -uid "19B54EBF-4283-D484-891E-0E9AD230D088";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface16" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "38FD3127-4038-77CF-3DF6-5C9C89AC5B73";
+createNode mesh -n "polySurfaceShape18" -p "polySurface16";
+	rename -uid "153D0002-4AC9-248D-01C1-95ACCF3FC79B";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface17" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "2F9BF1B3-4205-F8F3-E923-67B18FB48A28";
+createNode mesh -n "polySurfaceShape19" -p "polySurface17";
+	rename -uid "BA172B6B-430C-1A56-3363-E6BF7F621004";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface18" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "9BC69E6B-4EB8-468D-0BDF-8F80059BC2F4";
+createNode mesh -n "polySurfaceShape20" -p "polySurface18";
+	rename -uid "2DA5E66F-4A98-4F9E-8B9F-A1B7032D7587";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface19" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "6F71954E-4030-4C3D-DF7D-918AF850CBA1";
+createNode mesh -n "polySurfaceShape21" -p "polySurface19";
+	rename -uid "99CFD1D0-40E7-6CB0-85B0-04B1DE1C38E2";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface20" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "72B90BE6-47BA-6D5A-5BDD-F7B874F5D6D6";
+createNode mesh -n "polySurfaceShape22" -p "polySurface20";
+	rename -uid "79766E72-4CF2-BFCE-340F-2699207608AF";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface21" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "5B5D8D2B-436B-34B3-D693-6EB5EFEB92E1";
+createNode mesh -n "polySurfaceShape23" -p "polySurface21";
+	rename -uid "409D57B2-40F9-9115-D863-0691566FADDF";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface22" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "2FADF17A-441C-F7A4-848F-98B8685AFDCD";
+createNode mesh -n "polySurfaceShape24" -p "polySurface22";
+	rename -uid "D0BE797B-4DEE-CCA6-4541-2FA5CD77C06E";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface23" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "E4523623-4D9F-FCBF-E5AC-A2BEB597661C";
+createNode transform -n "transform4" -p "polySurface23";
+	rename -uid "26C003C7-4FD9-08DB-BE68-FBADCA9BDAD7";
+	setAttr ".v" no;
+createNode mesh -n "polySurfaceShape25" -p "transform4";
+	rename -uid "D45FB7C7-4A39-A433-4E99-F3A2BE1D37F7";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface24" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "A8E06A23-4055-DFAF-E5FF-7A8D09934CB6";
+createNode transform -n "transform5" -p "|Tavern_Counter_and_Barrel:Counter_Base1|polySurface24";
+	rename -uid "8774A3BF-4510-4F79-26B1-6DA82F2F2443";
+	setAttr ".v" no;
+createNode mesh -n "polySurfaceShape26" -p "transform5";
+	rename -uid "A0555D87-4299-A2FB-363C-4F84FEB1060C";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "transform1" -p "|Tavern_Counter_and_Barrel:Counter_Base1";
+	rename -uid "C62B6425-4F54-D6D0-592F-BB9377EE1EE6";
+	setAttr ".v" no;
+createNode mesh -n "Tavern_Counter_and_Barrel:Counter_Base1Shape" -p "transform1";
+	rename -uid "FE876056-4F1A-9C3E-73DC-9F82A1580676";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface1";
+	rename -uid "7FED560B-4B17-B3B3-67DA-DBA288AB1875";
+	setAttr ".rp" -type "double3" -2.7647927563552632 2.9932074467640852 -2.5786605092595085 ;
+	setAttr ".sp" -type "double3" -2.7647927563552632 2.9932074467640852 -2.5786605092595085 ;
+createNode mesh -n "polySurface1Shape" -p "|polySurface1";
+	rename -uid "DD6296F8-4BCA-DEAF-5E82-FFAC727411D6";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface24";
+	rename -uid "629DC1B2-431B-759B-7115-46B9B165D8F3";
+	setAttr ".rp" -type "double3" -2.7639649670486226 0.28500891430196518 -2.5786605092595085 ;
+	setAttr ".sp" -type "double3" -2.7639649670486226 0.28500891430196518 -2.5786605092595085 ;
+createNode mesh -n "polySurface24Shape" -p "|polySurface24";
+	rename -uid "BEB4F68D-43E8-50D8-740A-0AB5DA551F40";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface7";
+	rename -uid "973F77F4-4B1E-F26A-6312-1FACEBFDC8E4";
+	setAttr ".rp" -type "double3" -2.848688558853127 1.6259087841015791 -2.6263473245213493 ;
+	setAttr ".sp" -type "double3" -2.848688558853127 1.6259087841015791 -2.6263473245213493 ;
+createNode mesh -n "polySurface7Shape" -p "|polySurface7";
+	rename -uid "5B422A7E-4F4D-1280-8A8A-91ABD0463D47";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "Tavern_Counter_and_Barrel:Barrel_Stand";
+	rename -uid "2B1EB789-4AB3-B582-0841-83A374F6C330";
+	setAttr ".t" -type "double3" -5.8006355347485439 -0.15154138705605114 -6.3347693255940358 ;
+	setAttr ".r" -type "double3" 0 90 0 ;
+	setAttr ".rp" -type "double3" -3.7272779429675857 5.1696904975108584 -1.3817042130057118 ;
+	setAttr ".sp" -type "double3" -3.7272779429675857 5.1696904975108584 -1.3817042130057118 ;
+createNode transform -n "polySurface25" -p "|Tavern_Counter_and_Barrel:Barrel_Stand";
+	rename -uid "0292EBF6-45DC-865C-5DF7-A3B9F7D895FB";
+createNode mesh -n "polySurfaceShape27" -p "polySurface25";
+	rename -uid "7D9D4383-4A56-008B-D9C6-FEA7FD64B958";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface26" -p "|Tavern_Counter_and_Barrel:Barrel_Stand";
+	rename -uid "D2DEA4D5-42FD-96DC-7B72-B294E33DCBC0";
+createNode mesh -n "polySurfaceShape28" -p "polySurface26";
+	rename -uid "C5B3719B-49EF-6135-0E1F-AB8CAD2EEED3";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface27" -p "|Tavern_Counter_and_Barrel:Barrel_Stand";
+	rename -uid "35ABAD69-47CC-3178-E05D-21B4B33A96C6";
+createNode mesh -n "polySurfaceShape29" -p "polySurface27";
+	rename -uid "615FAC19-4765-F724-1BA1-0F8D3E7089E7";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface28" -p "|Tavern_Counter_and_Barrel:Barrel_Stand";
+	rename -uid "D6DE862C-4EDC-9AB6-3798-9A9AA072D532";
+createNode mesh -n "polySurfaceShape30" -p "polySurface28";
+	rename -uid "642822C5-4FC9-8DAA-44B6-8C9FB092F111";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface29" -p "|Tavern_Counter_and_Barrel:Barrel_Stand";
+	rename -uid "751B9FCD-4F2D-3439-2489-AE843670E7B4";
+createNode mesh -n "polySurfaceShape31" -p "polySurface29";
+	rename -uid "F1CCB418-4328-CD38-8177-9E92FBB9797C";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface30" -p "|Tavern_Counter_and_Barrel:Barrel_Stand";
+	rename -uid "8C3BE1AB-4ACC-0D88-8140-D980ECAEF030";
+createNode mesh -n "polySurfaceShape32" -p "polySurface30";
+	rename -uid "57B6E8A4-40FA-274A-B277-6F8E238269F2";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface31" -p "|Tavern_Counter_and_Barrel:Barrel_Stand";
+	rename -uid "96D8ABF5-4FD7-F058-6796-EA949143CBF3";
+createNode mesh -n "polySurfaceShape33" -p "polySurface31";
+	rename -uid "EA8C45E6-4918-E93F-A7E5-4CB97E33E978";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface32" -p "|Tavern_Counter_and_Barrel:Barrel_Stand";
+	rename -uid "74809AC8-48BE-EF0C-B111-D8B40CEE3F16";
+createNode mesh -n "polySurfaceShape34" -p "polySurface32";
+	rename -uid "0C68052B-438C-36D3-147C-9FB99369C6A8";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "polySurface33" -p "|Tavern_Counter_and_Barrel:Barrel_Stand";
+	rename -uid "CAC8F8FF-40AD-3503-C1AF-5A868DF6D9DE";
+createNode mesh -n "polySurfaceShape35" -p "polySurface33";
+	rename -uid "0C8B7276-44DE-DC04-950F-B3833AC27D03";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "transform8" -p "|Tavern_Counter_and_Barrel:Barrel_Stand";
+	rename -uid "6C973A31-4B7F-47BB-FD7F-27B183A91CA6";
+	setAttr ".v" no;
+createNode mesh -n "Tavern_Counter_and_Barrel:Barrel_StandShape" -p "transform8";
+	rename -uid "06EACE47-4CBE-144A-247B-19A5DFDFFCDC";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
 createNode fosterParent -n "Potted_PlantRNfosterParent1";
-	rename -uid "9CB10064-4729-306D-177F-99AAD8DED177";
+	rename -uid "DE5C21F4-49F2-D2A0-A593-3AB8E3EC8E65";
 createNode transform -n "Potted_Plant:transform1" -p "Potted_PlantRNfosterParent1";
 	rename -uid "F3C22FA9-45F7-22F0-C2A1-93AB61B38AB2";
 	setAttr ".v" no;
@@ -4523,21 +5063,59 @@ createNode transform -n "Potted_Plant:transform11" -p "Potted_PlantRNfosterParen
 createNode transform -n "Potted_Plant:transform12" -p "Potted_PlantRNfosterParent1";
 	rename -uid "93AD2AAC-4D06-84AD-87B0-658C66AC2BEE";
 	setAttr ".v" no;
+createNode fosterParent -n "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "55A93408-4EB3-F80B-C634-E093D5E4FF3C";
+createNode transform -n "Tavern_Counter_and_Barrel:transform4" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "4A075E98-489A-D076-38F3-0D905E54201A";
+	setAttr ".v" no;
+createNode transform -n "Tavern_Counter_and_Barrel:transform10" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "C6CB942B-4051-88DE-3A9A-3DA4AD75489A";
+	setAttr ".v" no;
+createNode transform -n "Tavern_Counter_and_Barrel:transform5" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "B325C768-49B8-42A7-40C2-DB928B854D1C";
+	setAttr ".v" no;
+createNode transform -n "Tavern_Counter_and_Barrel:transform7" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "4ED0F5CE-4709-ECDF-9C52-3D948FEC1ABE";
+	setAttr ".v" no;
+createNode transform -n "Tavern_Counter_and_Barrel:transform12" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "C7574E02-4672-27CA-8EFF-0D8B431B8DEB";
+	setAttr ".v" no;
+createNode transform -n "Tavern_Counter_and_Barrel:transform11" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "5773738F-41AB-8606-C2DF-269192283437";
+	setAttr ".v" no;
+createNode transform -n "Tavern_Counter_and_Barrel:transform6" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "3789A4E6-4DDD-7B54-2E76-3CB79D76F2E6";
+	setAttr ".v" no;
+createNode transform -n "Tavern_Counter_and_Barrel:transform8" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "DB7CB2F0-4EB8-3C97-E752-F8856E04D32B";
+	setAttr ".v" no;
+createNode transform -n "Tavern_Counter_and_Barrel:transform9" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "AFAA4A52-4F30-F000-DC74-E184EA2587EE";
+	setAttr ".v" no;
+createNode transform -n "Tavern_Counter_and_Barrel:transform1" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "3107C4BF-4870-2072-CDE8-439110E36E6E";
+	setAttr ".v" no;
+createNode transform -n "Tavern_Counter_and_Barrel:transform3" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "3435F168-4C6C-445B-7623-FC9E2018CA4C";
+	setAttr ".v" no;
+createNode transform -n "Tavern_Counter_and_Barrel:transform2" -p "Tavern_Counter_and_BarrelRNfosterParent1";
+	rename -uid "E88DCA3D-49A8-5C18-75C1-F18A0759CD6B";
+	setAttr ".v" no;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "CF2BB08A-41AA-BF64-88EE-13B9D81C9941";
+	rename -uid "BB519479-4660-4D37-5406-578CE916E342";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A165CBEE-4C6B-880C-B6D0-4EB3FB6DB8EB";
+	rename -uid "EF0E9F85-427E-472C-DF26-F3BA4950A686";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "5D03EA64-41FF-704C-1980-989633403C8C";
+	rename -uid "C86591C3-4C91-AA08-D92D-3C8E3031B71B";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "B3AC6DE3-4899-9B5C-CF09-D28E266C50F8";
+	rename -uid "C3C063D0-496F-E246-A689-96ACDCD06163";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "98882CE8-46B7-BBC8-C56A-34979D453E96";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "5605551E-45B2-7A3C-688E-DD98C5A9FA54";
+	rename -uid "1B443E3D-4AE9-6DC7-2485-67B9755D745A";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "A530D7D7-4810-62AC-46C8-58AD8B626E39";
 	setAttr ".g" yes;
@@ -4562,14 +5140,14 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 695\n            -height 195\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 695\n            -height 332\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n"
 		+ "            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
 		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n"
-		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 695\n            -height 195\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
+		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 695\n            -height 331\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
 		+ "            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n"
 		+ "            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n"
-		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 695\n            -height 195\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n"
+		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 695\n            -height 331\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n"
 		+ "        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
 		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
 		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1398\n            -height 730\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
@@ -4610,88 +5188,6 @@ createNode script -n "sceneConfigurationScriptNode";
 createNode polyCube -n "polyCube1";
 	rename -uid "EA57F38F-4020-9684-3A5C-59B65F009FBF";
 	setAttr ".cuv" 4;
-createNode reference -n "Tavern_Counter_and_BarrelRN";
-	rename -uid "2030AF4D-46F5-9180-3726-CFACB6A6317E";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Tavern_Counter_and_BarrelRN"
-		"Tavern_Counter_and_BarrelRN" 4
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_handle" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_handle" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		"Tavern_Counter_and_BarrelRN" 33
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter" "translate" " -type \"double3\" 4.81556151014625655 0.27235120509722427 -2.30569079829064405"
-		
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter" "rotate" " -type \"double3\" 0 90 0"
-		
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter" "rotatePivot" " -type \"double3\" 0 -0.40737867310900711 0"
-		
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter" "scalePivot" " -type \"double3\" 0 -0.58983405490795748 0"
-		
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter" "scalePivotTranslate" " -type \"double3\" 0 0.18245538179895224 0"
-		
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base|Tavern_Counter_and_Barrel:Counter_BaseShape" 
-		"uvPivot" " -type \"double2\" 0.37499997019767761 0.12540757656097412"
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base1" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base1" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base2" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base2" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel" "translate" " -type \"double3\" 10.27595781581713474 0.89941768327317506 2.24610973991230622"
-		
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel" "rotate" " -type \"double3\" 0 90 0"
-		
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel" "rotatePivot" " -type \"double3\" 9.89355564117431641 4.12563955783843994 -19.78843021392822266"
-		
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel" "rotatePivotTranslate" " -type \"double3\" -29.68198585510253906 0 9.89487457275390625"
-		
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel" "scalePivot" " -type \"double3\" 9.89355564117431641 4.12563955783843994 -19.78843021392822266"
-		
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_Base" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_Base" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand_Rod" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand_Rod" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand_Rod1" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand_Rod1" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand1" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand1" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring1" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring1" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode reference -n "Bookshelf_Bottom_CabinetRN";
 	rename -uid "CC3D6C86-4079-BB61-1FF8-C6BEC04020DD";
 	setAttr ".ed" -type "dataReferenceEdits" 
@@ -5398,29 +5894,29 @@ createNode reference -n "Potted_PlantRN";
 		2 "|Potted_PlantRNfosterParent1|Potted_Plant:transform1|Potted_Plant:soilShape" 
 		"instObjGroups.objectGroups[1].objectGrpCompList" " -type \"componentList\" 1 \"f[0:175]\""
 		
-		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform5|Potted_Plant:leaf3Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform2|Potted_Plant:stemShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform8|Potted_Plant:stemShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform10|Potted_Plant:PotShape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform12|Potted_Plant:leafShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform4|Potted_Plant:leafShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform1|Potted_Plant:soilShape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform7|Potted_Plant:leafShape4.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform11|Potted_Plant:leafShape5.instObjGroups" 
+		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform5|Potted_Plant:leaf3Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform6|Potted_Plant:stemShape4.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform1|Potted_Plant:soilShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform4|Potted_Plant:leafShape1.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform3|Potted_Plant:stemShape5.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform9|Potted_Plant:stemShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform6|Potted_Plant:stemShape4.instObjGroups" 
+		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform10|Potted_Plant:PotShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform8|Potted_Plant:stemShape3.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform12|Potted_Plant:leafShape2.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Potted_PlantRNfosterParent1|Potted_Plant:transform11|Potted_Plant:leafShape5.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		5 3 "Potted_PlantRN" "|Potted_PlantRNfosterParent1|Potted_Plant:transform1|Potted_Plant:soilShape.instObjGroups.objectGroups[1]" 
 		"Potted_PlantRN.placeHolderList[1]" ""
@@ -5690,7 +6186,7 @@ createNode reference -n "Scroll_copyRN";
 		"Scroll_copyRN" 6
 		2 "|Scroll_copy:Scrol_group_2" "translate" " -type \"double3\" -3.71768686858423614 2.12010645704681977 1.44023312792723868"
 		
-		2 "|Scroll_copy:Scrol_group_2" "rotate" " -type \"double3\" 0 93.6449025677218998 0"
+		2 "|Scroll_copy:Scrol_group_2" "rotate" " -type \"double3\" 0 93.64490256772191401 0"
 		
 		2 "|Scroll_copy:Scrol_group_2" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		
@@ -5804,11 +6300,8 @@ createNode polyTweak -n "polyTweak1";
 createNode polyTweakUV -n "polyTweakUV4";
 	rename -uid "5DB34F25-49DE-B328-9C30-628387B5CCBF";
 	setAttr ".uopa" yes;
-	setAttr -s 5 ".uvtk";
-	setAttr ".uvtk[4]" -type "float2" 0.8614881 -0.49765369 ;
-	setAttr ".uvtk[5]" -type "float2" 0.50777721 -0.79731899 ;
-	setAttr ".uvtk[6]" -type "float2" 0.55000186 -0.83967072 ;
-	setAttr ".uvtk[7]" -type "float2" 0.90371251 -0.54000539 ;
+	setAttr -s 4 ".uvtk[4:7]" -type "float2" 0.8614881 -0.49765369 0.50777721
+		 -0.79731899 0.55000186 -0.83967072 0.90371251 -0.54000539;
 createNode polyMapSewMove -n "polyMapSewMove7";
 	rename -uid "DF3514DD-4779-F714-514D-069330D5F5B7";
 	setAttr ".uopa" yes;
@@ -5816,11 +6309,8 @@ createNode polyMapSewMove -n "polyMapSewMove7";
 createNode polyTweakUV -n "polyTweakUV5";
 	rename -uid "14D10F37-4E1B-6E1A-D475-708B5451B4E2";
 	setAttr ".uopa" yes;
-	setAttr -s 5 ".uvtk";
-	setAttr ".uvtk[14]" -type "float2" 1.3650056 -0.23285374 ;
-	setAttr ".uvtk[15]" -type "float2" 1.2251656 -0.23285374 ;
-	setAttr ".uvtk[16]" -type "float2" 1.2251656 -0.23285374 ;
-	setAttr ".uvtk[17]" -type "float2" 1.3650056 -0.23285374 ;
+	setAttr -s 4 ".uvtk[14:17]" -type "float2" 1.36500561 -0.23285374 1.22516561
+		 -0.23285374 1.22516561 -0.23285374 1.36500561 -0.23285374;
 createNode polyMapSewMove -n "polyMapSewMove8";
 	rename -uid "CD6DD16E-4071-6426-1866-3C9B6BF0DE34";
 	setAttr ".uopa" yes;
@@ -5883,11 +6373,8 @@ createNode polyMapSewMove -n "polyMapSewMove11";
 createNode polyTweakUV -n "polyTweakUV9";
 	rename -uid "664FFD11-4795-F176-819F-7BAE4FD7CF8A";
 	setAttr ".uopa" yes;
-	setAttr -s 5 ".uvtk";
-	setAttr ".uvtk[18]" -type "float2" 0.13195203 0 ;
-	setAttr ".uvtk[19]" -type "float2" 0.13195203 0 ;
-	setAttr ".uvtk[20]" -type "float2" -0.13195203 0 ;
-	setAttr ".uvtk[21]" -type "float2" -0.13195203 0 ;
+	setAttr -s 4 ".uvtk[18:21]" -type "float2" 0.13195203 0 0.13195203 0
+		 -0.13195203 0 -0.13195203 0;
 createNode polyMapSewMove -n "polyMapSewMove12";
 	rename -uid "F3A62308-4694-B2E9-64D1-F0B401A49331";
 	setAttr ".uopa" yes;
@@ -5895,11 +6382,8 @@ createNode polyMapSewMove -n "polyMapSewMove12";
 createNode polyTweakUV -n "polyTweakUV10";
 	rename -uid "2A278BDB-4A59-9858-61B8-33894ABEB313";
 	setAttr ".uopa" yes;
-	setAttr -s 5 ".uvtk";
-	setAttr ".uvtk[4]" -type "float2" 0 0.12766159 ;
-	setAttr ".uvtk[5]" -type "float2" 0 0.12766159 ;
-	setAttr ".uvtk[6]" -type "float2" 0 -0.12766165 ;
-	setAttr ".uvtk[7]" -type "float2" 0 -0.12766165 ;
+	setAttr -s 4 ".uvtk[4:7]" -type "float2" 0 0.12766159 0 0.12766159
+		 0 -0.12766165 0 -0.12766165;
 createNode polyMapSewMove -n "polyMapSewMove13";
 	rename -uid "A1B334AD-4157-2990-C8CA-D49587E5FF67";
 	setAttr ".uopa" yes;
@@ -5907,11 +6391,8 @@ createNode polyMapSewMove -n "polyMapSewMove13";
 createNode polyTweakUV -n "polyTweakUV11";
 	rename -uid "A6736766-4C90-D837-E49F-14A745D77AF5";
 	setAttr ".uopa" yes;
-	setAttr -s 5 ".uvtk";
-	setAttr ".uvtk[12]" -type "float2" 5.7043508e-09 0.13340676 ;
-	setAttr ".uvtk[13]" -type "float2" 0 0.13340676 ;
-	setAttr ".uvtk[14]" -type "float2" 0 -0.13340674 ;
-	setAttr ".uvtk[15]" -type "float2" 5.7043508e-09 -0.13340674 ;
+	setAttr -s 4 ".uvtk[12:15]" -type "float2" 5.7043508e-09 0.13340676
+		 0 0.13340676 0 -0.13340674 5.7043508e-09 -0.13340674;
 createNode polyMapSewMove -n "polyMapSewMove14";
 	rename -uid "39AEAEEF-4281-062C-6F9C-198174D4A976";
 	setAttr ".uopa" yes;
@@ -5928,6 +6409,775 @@ createNode polyTweakUV -n "polyTweakUV12";
 		 -0.25318152 -0.90617794 -0.16411459 -0.92622447 -0.16411448 -0.92622471 -0.25318143
 		 -0.92622453 -0.058107257 -1.015291452 -0.058107316 -1.015291452 -0.14717418 -0.92622447
 		 -0.14717412 -1.015291214 -0.27090773 -0.92622477 -0.27090773;
+createNode reference -n "Tavern_Counter_and_BarrelRN";
+	rename -uid "A2A5C009-4F56-0A17-B2A1-3AB011D27CC1";
+	setAttr -s 74 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
+	setAttr ".phl[11]" 0;
+	setAttr ".phl[12]" 0;
+	setAttr ".phl[13]" 0;
+	setAttr ".phl[14]" 0;
+	setAttr ".phl[15]" 0;
+	setAttr ".phl[16]" 0;
+	setAttr ".phl[17]" 0;
+	setAttr ".phl[18]" 0;
+	setAttr ".phl[19]" 0;
+	setAttr ".phl[20]" 0;
+	setAttr ".phl[21]" 0;
+	setAttr ".phl[22]" 0;
+	setAttr ".phl[23]" 0;
+	setAttr ".phl[24]" 0;
+	setAttr ".phl[25]" 0;
+	setAttr ".phl[26]" 0;
+	setAttr ".phl[27]" 0;
+	setAttr ".phl[28]" 0;
+	setAttr ".phl[29]" 0;
+	setAttr ".phl[30]" 0;
+	setAttr ".phl[31]" 0;
+	setAttr ".phl[32]" 0;
+	setAttr ".phl[33]" 0;
+	setAttr ".phl[34]" 0;
+	setAttr ".phl[35]" 0;
+	setAttr ".phl[36]" 0;
+	setAttr ".phl[37]" 0;
+	setAttr ".phl[38]" 0;
+	setAttr ".phl[39]" 0;
+	setAttr ".phl[40]" 0;
+	setAttr ".phl[41]" 0;
+	setAttr ".phl[42]" 0;
+	setAttr ".phl[43]" 0;
+	setAttr ".phl[44]" 0;
+	setAttr ".phl[45]" 0;
+	setAttr ".phl[46]" 0;
+	setAttr ".phl[47]" 0;
+	setAttr ".phl[48]" 0;
+	setAttr ".phl[49]" 0;
+	setAttr ".phl[50]" 0;
+	setAttr ".phl[51]" 0;
+	setAttr ".phl[52]" 0;
+	setAttr ".phl[53]" 0;
+	setAttr ".phl[54]" 0;
+	setAttr ".phl[55]" 0;
+	setAttr ".phl[56]" 0;
+	setAttr ".phl[57]" 0;
+	setAttr ".phl[58]" 0;
+	setAttr ".phl[59]" 0;
+	setAttr ".phl[60]" 0;
+	setAttr ".phl[61]" 0;
+	setAttr ".phl[62]" 0;
+	setAttr ".phl[63]" 0;
+	setAttr ".phl[64]" 0;
+	setAttr ".phl[65]" 0;
+	setAttr ".phl[66]" 0;
+	setAttr ".phl[67]" 0;
+	setAttr ".phl[68]" 0;
+	setAttr ".phl[69]" 0;
+	setAttr ".phl[70]" 0;
+	setAttr ".phl[71]" 0;
+	setAttr ".phl[72]" 0;
+	setAttr ".phl[73]" 0;
+	setAttr ".phl[74]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Tavern_Counter_and_BarrelRN"
+		"Tavern_Counter_and_BarrelRN" 0
+		"Tavern_Counter_and_BarrelRN" 148
+		0 "|Tavern_Counter_and_Barrel:Counter_BaseShape" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2" 
+		"-s -r "
+		0 "|Tavern_Counter_and_Barrel:Counter_Base1Shape" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3" 
+		"-s -r "
+		0 "|Tavern_Counter_and_Barrel:Counter_Base2Shape" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1" 
+		"-s -r "
+		0 "|Tavern_Counter_and_Barrel:Spicket_BaseShape" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9" 
+		"-s -r "
+		0 "|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8" 
+		"-s -r "
+		0 "|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape1" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6" 
+		"-s -r "
+		0 "|Tavern_Counter_and_Barrel:BarrelShape" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11" 
+		"-s -r "
+		0 "|Tavern_Counter_and_Barrel:Barrel_StandShape" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform12" 
+		"-s -r "
+		0 "|Tavern_Counter_and_Barrel:Barrel_StandShape1" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform7" 
+		"-s -r "
+		0 "|Tavern_Counter_and_Barrel:Barrel_RingShape1" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5" 
+		"-s -r "
+		0 "|Tavern_Counter_and_Barrel:Barrel_RingShape2" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10" 
+		"-s -r "
+		0 "|Tavern_Counter_and_Barrel:pCylinderShape1" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4" 
+		"-s -r "
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2" 
+		"|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base" 
+		"-s -r "
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3" 
+		"|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base1" 
+		"-s -r "
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1" 
+		"|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base2" 
+		"-s -r "
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9" 
+		"|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_Base" 
+		"-s -r "
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8" 
+		"|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand_Rod" 
+		"-s -r "
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6" 
+		"|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand_Rod1" 
+		"-s -r "
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11" 
+		"|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel" "-s -r "
+		
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform12" 
+		"|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand" 
+		"-s -r "
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform7" 
+		"|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand1" 
+		"-s -r "
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5" 
+		"|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring1" 
+		"-s -r "
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10" 
+		"|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring2" 
+		"-s -r "
+		0 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4" 
+		"|Tavern_Counter_and_Barrel:pCylinder1" "-s -r "
+		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2|Tavern_Counter_and_Barrel:Counter_BaseShape" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2|Tavern_Counter_and_Barrel:Counter_BaseShape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:1859]\""
+		
+		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base1" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base1" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base1" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3|Tavern_Counter_and_Barrel:Counter_Base1Shape" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3|Tavern_Counter_and_Barrel:Counter_Base1Shape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:339]\""
+		
+		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base2" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base2" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_Barrel:Tavern_Counter|Tavern_Counter_and_Barrel:Counter_Base2" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1|Tavern_Counter_and_Barrel:Counter_Base2Shape" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1|Tavern_Counter_and_Barrel:Counter_Base2Shape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:59]\""
+		
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_Base" 
+		"translate" " -type \"double3\" -13.653162540972831 0 11.48595991772907254"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9|Tavern_Counter_and_Barrel:Spicket_BaseShape" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9|Tavern_Counter_and_Barrel:Spicket_BaseShape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:139]\""
+		
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand_Rod" 
+		"translate" " -type \"double3\" -13.653162540972831 0 11.48595991772907254"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:59]\""
+		
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand_Rod1" 
+		"translate" " -type \"double3\" -13.653162540972831 0 11.48595991772907254"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape1" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape1" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:59]\""
+		
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel" 
+		"translate" " -type \"double3\" -13.653162540972831 0 11.48595991772907254"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11|Tavern_Counter_and_Barrel:BarrelShape" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11|Tavern_Counter_and_Barrel:BarrelShape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:703]\""
+		
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand" 
+		"translate" " -type \"double3\" -13.653162540972831 0 11.48595991772907254"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform12|Tavern_Counter_and_Barrel:Barrel_StandShape" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand1" 
+		"translate" " -type \"double3\" -13.653162540972831 0 11.48595991772907254"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform7|Tavern_Counter_and_Barrel:Barrel_StandShape1" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring1" 
+		"translate" " -type \"double3\" -13.653162540972831 0 11.48595991772907254"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5|Tavern_Counter_and_Barrel:Barrel_RingShape1" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5|Tavern_Counter_and_Barrel:Barrel_RingShape1" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:319]\""
+		
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring2" 
+		"translate" " -type \"double3\" -13.653162540972831 0 11.48595991772907254"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10|Tavern_Counter_and_Barrel:Barrel_RingShape2" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10|Tavern_Counter_and_Barrel:Barrel_RingShape2" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:319]\""
+		
+		2 "|Tavern_Counter_and_Barrel:pCylinder1" "translate" " -type \"double3\" -13.653162540972831 0 11.48595991772907254"
+		
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4|Tavern_Counter_and_Barrel:pCylinderShape1" 
+		"intermediateObject" " 1"
+		2 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4|Tavern_Counter_and_Barrel:pCylinderShape1" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:219]\""
+		
+		3 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape1.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2|Tavern_Counter_and_Barrel:Counter_BaseShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1|Tavern_Counter_and_Barrel:Counter_Base2Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4|Tavern_Counter_and_Barrel:pCylinderShape1.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3|Tavern_Counter_and_Barrel:Counter_Base1Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5|Tavern_Counter_and_Barrel:Barrel_RingShape1.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9|Tavern_Counter_and_Barrel:Spicket_BaseShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11|Tavern_Counter_and_Barrel:BarrelShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10|Tavern_Counter_and_Barrel:Barrel_RingShape2.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4|Tavern_Counter_and_Barrel:pCylinderShape1.instObjGroups.objectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[1]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4|Tavern_Counter_and_Barrel:pCylinderShape1.instObjGroups.objectGroups[0].objectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[2]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4|Tavern_Counter_and_Barrel:pCylinderShape1.instObjGroups.objectGroups[0].objectGrpColor" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[3]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4|Tavern_Counter_and_Barrel:pCylinderShape1.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[4]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4|Tavern_Counter_and_Barrel:pCylinderShape1.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[5]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4|Tavern_Counter_and_Barrel:pCylinderShape1.compInstObjGroups.compObjectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[6]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform4|Tavern_Counter_and_Barrel:pCylinderShape1.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[7]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10|Tavern_Counter_and_Barrel:Barrel_RingShape2.instObjGroups.objectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[8]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10|Tavern_Counter_and_Barrel:Barrel_RingShape2.instObjGroups.objectGroups[0].objectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[9]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10|Tavern_Counter_and_Barrel:Barrel_RingShape2.instObjGroups.objectGroups[0].objectGrpColor" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[10]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10|Tavern_Counter_and_Barrel:Barrel_RingShape2.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[11]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10|Tavern_Counter_and_Barrel:Barrel_RingShape2.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[12]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10|Tavern_Counter_and_Barrel:Barrel_RingShape2.compInstObjGroups.compObjectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[13]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform10|Tavern_Counter_and_Barrel:Barrel_RingShape2.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[14]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5|Tavern_Counter_and_Barrel:Barrel_RingShape1.instObjGroups.objectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[15]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5|Tavern_Counter_and_Barrel:Barrel_RingShape1.instObjGroups.objectGroups[0].objectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[16]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5|Tavern_Counter_and_Barrel:Barrel_RingShape1.instObjGroups.objectGroups[0].objectGrpColor" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[17]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5|Tavern_Counter_and_Barrel:Barrel_RingShape1.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[18]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5|Tavern_Counter_and_Barrel:Barrel_RingShape1.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[19]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5|Tavern_Counter_and_Barrel:Barrel_RingShape1.compInstObjGroups.compObjectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[20]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform5|Tavern_Counter_and_Barrel:Barrel_RingShape1.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[21]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform7|Tavern_Counter_and_Barrel:Barrel_StandShape1.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[22]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform7|Tavern_Counter_and_Barrel:Barrel_StandShape1.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[23]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform12|Tavern_Counter_and_Barrel:Barrel_StandShape.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[24]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform12|Tavern_Counter_and_Barrel:Barrel_StandShape.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[25]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11|Tavern_Counter_and_Barrel:BarrelShape.instObjGroups.objectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[26]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11|Tavern_Counter_and_Barrel:BarrelShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[27]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11|Tavern_Counter_and_Barrel:BarrelShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[28]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11|Tavern_Counter_and_Barrel:BarrelShape.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[29]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11|Tavern_Counter_and_Barrel:BarrelShape.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[30]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11|Tavern_Counter_and_Barrel:BarrelShape.compInstObjGroups.compObjectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[31]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform11|Tavern_Counter_and_Barrel:BarrelShape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[32]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape1.instObjGroups.objectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[33]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape1.instObjGroups.objectGroups[0].objectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[34]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape1.instObjGroups.objectGroups[0].objectGrpColor" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[35]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape1.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[36]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape1.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[37]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape1.compInstObjGroups.compObjectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[38]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform6|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape1.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[39]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape.instObjGroups.objectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[40]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[41]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[42]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[43]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[44]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape.compInstObjGroups.compObjectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[45]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform8|Tavern_Counter_and_Barrel:Barrel_Stand_RodShape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[46]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9|Tavern_Counter_and_Barrel:Spicket_BaseShape.instObjGroups.objectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[47]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9|Tavern_Counter_and_Barrel:Spicket_BaseShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[48]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9|Tavern_Counter_and_Barrel:Spicket_BaseShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[49]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9|Tavern_Counter_and_Barrel:Spicket_BaseShape.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[50]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9|Tavern_Counter_and_Barrel:Spicket_BaseShape.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[51]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9|Tavern_Counter_and_Barrel:Spicket_BaseShape.compInstObjGroups.compObjectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[52]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform9|Tavern_Counter_and_Barrel:Spicket_BaseShape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[53]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1|Tavern_Counter_and_Barrel:Counter_Base2Shape.instObjGroups.objectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[54]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1|Tavern_Counter_and_Barrel:Counter_Base2Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[55]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1|Tavern_Counter_and_Barrel:Counter_Base2Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[56]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1|Tavern_Counter_and_Barrel:Counter_Base2Shape.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[57]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1|Tavern_Counter_and_Barrel:Counter_Base2Shape.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[58]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1|Tavern_Counter_and_Barrel:Counter_Base2Shape.compInstObjGroups.compObjectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[59]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform1|Tavern_Counter_and_Barrel:Counter_Base2Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[60]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3|Tavern_Counter_and_Barrel:Counter_Base1Shape.instObjGroups.objectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[61]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3|Tavern_Counter_and_Barrel:Counter_Base1Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[62]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3|Tavern_Counter_and_Barrel:Counter_Base1Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[63]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3|Tavern_Counter_and_Barrel:Counter_Base1Shape.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[64]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3|Tavern_Counter_and_Barrel:Counter_Base1Shape.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[65]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3|Tavern_Counter_and_Barrel:Counter_Base1Shape.compInstObjGroups.compObjectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[66]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform3|Tavern_Counter_and_Barrel:Counter_Base1Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[67]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2|Tavern_Counter_and_Barrel:Counter_BaseShape.instObjGroups.objectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[68]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2|Tavern_Counter_and_Barrel:Counter_BaseShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[69]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2|Tavern_Counter_and_Barrel:Counter_BaseShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[70]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2|Tavern_Counter_and_Barrel:Counter_BaseShape.outMesh" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[71]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2|Tavern_Counter_and_Barrel:Counter_BaseShape.worldMatrix" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[72]" ""
+		5 3 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2|Tavern_Counter_and_Barrel:Counter_BaseShape.compInstObjGroups.compObjectGroups[0]" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[73]" ""
+		5 4 "Tavern_Counter_and_BarrelRN" "|Tavern_Counter_and_BarrelRNfosterParent1|Tavern_Counter_and_Barrel:transform2|Tavern_Counter_and_Barrel:Counter_BaseShape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"Tavern_Counter_and_BarrelRN.placeHolderList[74]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode polyUnite -n "polyUnite2";
+	rename -uid "1DC22C71-419C-CC46-E400-9FBA6EB71D41";
+	setAttr -s 3 ".ip";
+	setAttr -s 3 ".im";
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId16";
+	rename -uid "CBFE3757-41B2-2D17-4F94-569CC9F32930";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId17";
+	rename -uid "FED7149A-489C-0AB9-243D-F5AB9289F77D";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId18";
+	rename -uid "CFDFD1C8-421F-04D6-E1A2-0589245F3360";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId19";
+	rename -uid "7F87370A-43E8-E296-47E3-C6A4FC1987ED";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId20";
+	rename -uid "C35B185E-4201-5EFE-AE4B-B1BA2005E9E7";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId21";
+	rename -uid "678610EE-4E11-9EE9-78EC-DD92E311123D";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId22";
+	rename -uid "07292011-44E1-7DA8-E1E9-1CA66561EA8D";
+	setAttr ".ihi" 0;
+createNode groupParts -n "Tavern_Counter_and_Barrel:groupParts1";
+	rename -uid "467CFE4A-4621-F84A-F471-C9AB4820C58F";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0:2259]";
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId23";
+	rename -uid "FFBD7147-461C-4159-1335-F29DEAE458A3";
+	setAttr ".ihi" 0;
+createNode polySeparate -n "polySeparate1";
+	rename -uid "728297B7-4065-2641-D31D-FEA143B455B4";
+	setAttr ".ic" 24;
+	setAttr -s 24 ".out";
+createNode groupId -n "groupId3";
+	rename -uid "44ED220B-4972-BE3F-AAB5-2DB3FF3FA750";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts1";
+	rename -uid "5F762BD3-4AE4-477A-3C23-4880D099B32B";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 322 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]" "f[116]" "f[117]" "f[118]" "f[119]" "f[120]" "f[121]" "f[122]" "f[123]" "f[124]" "f[125]" "f[126]" "f[127]" "f[128]" "f[129]" "f[130]" "f[131]" "f[132]" "f[133]" "f[134]" "f[135]" "f[136]" "f[137]" "f[138]" "f[139]" "f[140]" "f[141]" "f[142]" "f[143]" "f[144]" "f[145]" "f[146]" "f[147]" "f[148]" "f[149]" "f[150]" "f[151]" "f[152]" "f[153]" "f[154]" "f[155]" "f[156]" "f[157]" "f[158]" "f[159]" "f[160]" "f[161]" "f[162]" "f[163]" "f[164]" "f[165]" "f[166]" "f[167]" "f[168]" "f[169]" "f[170]" "f[171]" "f[172]" "f[173]" "f[174]" "f[175]" "f[176]" "f[177]" "f[178]" "f[179]" "f[180]" "f[181]" "f[182]" "f[183]" "f[184]" "f[185]" "f[186]" "f[187]" "f[188]" "f[189]" "f[190]" "f[191]" "f[192]" "f[193]" "f[194]" "f[195]" "f[196]" "f[197]" "f[198]" "f[199]" "f[200]" "f[201]" "f[202]" "f[203]" "f[204]" "f[205]" "f[206]" "f[207]" "f[208]" "f[209]" "f[210]" "f[211]" "f[212]" "f[213]" "f[214]" "f[215]" "f[216]" "f[217]" "f[218]" "f[219]" "f[220]" "f[221]" "f[222]" "f[223]" "f[224]" "f[225]" "f[226]" "f[227]" "f[228]" "f[229]" "f[230]" "f[231]" "f[232]" "f[233]" "f[234]" "f[235]" "f[236]" "f[237]" "f[238]" "f[239]" "f[240]" "f[241]" "f[242]" "f[243]" "f[244]" "f[245]" "f[246]" "f[247]" "f[248]" "f[249]" "f[250]" "f[251]" "f[252]" "f[253]" "f[254]" "f[255]" "f[256]" "f[257]" "f[258]" "f[259]" "f[260]" "f[261]" "f[262]" "f[263]" "f[264]" "f[265]" "f[266]" "f[267]" "f[268]" "f[269]" "f[270]" "f[271]" "f[272]" "f[273]" "f[274]" "f[275]" "f[276]" "f[277]" "f[278]" "f[279]" "f[280]" "f[281]" "f[282]" "f[283]" "f[284]" "f[285]" "f[286]" "f[287]" "f[288]" "f[289]" "f[290]" "f[291]" "f[292]" "f[293]" "f[294]" "f[295]" "f[296]" "f[297]" "f[298]" "f[299]" "f[300]" "f[301]" "f[302]" "f[303]" "f[304]" "f[305]" "f[306]" "f[307]" "f[308]" "f[309]" "f[310]" "f[311]" "f[312]" "f[313]" "f[314]" "f[315]" "f[316]" "f[317]" "f[318]" "f[319]" "f[320]" "f[321]";
+createNode groupId -n "groupId4";
+	rename -uid "AE320A10-46EA-43FE-5EAB-AD94DD405830";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts2";
+	rename -uid "42B1F9C4-43D6-32DC-57FA-1AA7B13C3AEC";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 18 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]";
+createNode groupId -n "groupId5";
+	rename -uid "956B5779-46DA-9510-35F6-93ADF050E2C8";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts3";
+	rename -uid "D0045753-4070-E29C-331E-92B9AC514559";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1406 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]" "f[116]" "f[117]" "f[118]" "f[119]" "f[120]" "f[121]" "f[122]" "f[123]" "f[124]" "f[125]" "f[126]" "f[127]" "f[128]" "f[129]" "f[130]" "f[131]" "f[132]" "f[133]" "f[134]" "f[135]" "f[136]" "f[137]" "f[138]" "f[139]" "f[140]" "f[141]" "f[142]" "f[143]" "f[144]" "f[145]" "f[146]" "f[147]" "f[148]" "f[149]" "f[150]" "f[151]" "f[152]" "f[153]" "f[154]" "f[155]" "f[156]" "f[157]" "f[158]" "f[159]" "f[160]" "f[161]" "f[162]" "f[163]" "f[164]" "f[165]" "f[166]" "f[167]" "f[168]" "f[169]" "f[170]" "f[171]" "f[172]" "f[173]" "f[174]" "f[175]" "f[176]" "f[177]" "f[178]" "f[179]" "f[180]" "f[181]" "f[182]" "f[183]" "f[184]" "f[185]" "f[186]" "f[187]" "f[188]" "f[189]" "f[190]" "f[191]" "f[192]" "f[193]" "f[194]" "f[195]" "f[196]" "f[197]" "f[198]" "f[199]" "f[200]" "f[201]" "f[202]" "f[203]" "f[204]" "f[205]" "f[206]" "f[207]" "f[208]" "f[209]" "f[210]" "f[211]" "f[212]" "f[213]" "f[214]" "f[215]" "f[216]" "f[217]" "f[218]" "f[219]" "f[220]" "f[221]" "f[222]" "f[223]" "f[224]" "f[225]" "f[226]" "f[227]" "f[228]" "f[229]" "f[230]" "f[231]" "f[232]" "f[233]" "f[234]" "f[235]" "f[236]" "f[237]" "f[238]" "f[239]" "f[240]" "f[241]" "f[242]" "f[243]" "f[244]" "f[245]" "f[246]" "f[247]" "f[248]" "f[249]" "f[250]" "f[251]" "f[252]" "f[253]" "f[254]" "f[255]" "f[256]" "f[257]" "f[258]" "f[259]" "f[260]" "f[261]" "f[262]" "f[263]" "f[264]" "f[265]" "f[266]" "f[267]" "f[268]" "f[269]" "f[270]" "f[271]" "f[272]" "f[273]" "f[274]" "f[275]" "f[276]" "f[277]" "f[278]" "f[279]" "f[280]" "f[281]" "f[282]" "f[283]" "f[284]" "f[285]" "f[286]" "f[287]" "f[288]" "f[289]" "f[290]" "f[291]" "f[292]" "f[293]" "f[294]" "f[295]" "f[296]" "f[297]" "f[298]" "f[299]" "f[300]" "f[301]" "f[302]" "f[303]" "f[304]" "f[305]" "f[306]" "f[307]" "f[308]" "f[309]" "f[310]" "f[311]" "f[312]" "f[313]" "f[314]" "f[315]" "f[316]" "f[317]" "f[318]" "f[319]" "f[320]" "f[321]" "f[322]" "f[323]" "f[324]" "f[325]" "f[326]" "f[327]" "f[328]" "f[329]" "f[330]" "f[331]" "f[332]" "f[333]" "f[334]" "f[335]" "f[336]" "f[337]" "f[338]" "f[339]" "f[340]" "f[341]" "f[342]" "f[343]" "f[344]" "f[345]" "f[346]" "f[347]" "f[348]" "f[349]" "f[350]" "f[351]" "f[352]" "f[353]" "f[354]" "f[355]" "f[356]" "f[357]" "f[358]" "f[359]" "f[360]" "f[361]" "f[362]" "f[363]" "f[364]" "f[365]" "f[366]" "f[367]" "f[368]" "f[369]" "f[370]" "f[371]" "f[372]" "f[373]" "f[374]" "f[375]" "f[376]" "f[377]" "f[378]" "f[379]" "f[380]" "f[381]" "f[382]" "f[383]" "f[384]" "f[385]" "f[386]" "f[387]" "f[388]" "f[389]" "f[390]" "f[391]" "f[392]" "f[393]" "f[394]" "f[395]" "f[396]" "f[397]" "f[398]" "f[399]" "f[400]" "f[401]" "f[402]" "f[403]" "f[404]" "f[405]" "f[406]" "f[407]" "f[408]" "f[409]" "f[410]" "f[411]" "f[412]" "f[413]" "f[414]" "f[415]" "f[416]" "f[417]" "f[418]" "f[419]" "f[420]" "f[421]" "f[422]" "f[423]" "f[424]" "f[425]" "f[426]" "f[427]" "f[428]" "f[429]" "f[430]" "f[431]" "f[432]" "f[433]" "f[434]" "f[435]" "f[436]" "f[437]" "f[438]" "f[439]" "f[440]" "f[441]" "f[442]" "f[443]" "f[444]" "f[445]" "f[446]" "f[447]" "f[448]" "f[449]" "f[450]" "f[451]" "f[452]" "f[453]" "f[454]" "f[455]" "f[456]" "f[457]" "f[458]" "f[459]" "f[460]" "f[461]" "f[462]" "f[463]" "f[464]" "f[465]" "f[466]" "f[467]" "f[468]" "f[469]" "f[470]" "f[471]" "f[472]" "f[473]" "f[474]" "f[475]" "f[476]" "f[477]" "f[478]" "f[479]" "f[480]" "f[481]" "f[482]" "f[483]" "f[484]" "f[485]" "f[486]" "f[487]" "f[488]" "f[489]" "f[490]" "f[491]" "f[492]" "f[493]" "f[494]" "f[495]" "f[496]" "f[497]" "f[498]" "f[499]" "f[500]" "f[501]" "f[502]" "f[503]" "f[504]" "f[505]" "f[506]" "f[507]" "f[508]" "f[509]" "f[510]" "f[511]" "f[512]" "f[513]" "f[514]" "f[515]" "f[516]" "f[517]" "f[518]" "f[519]" "f[520]" "f[521]" "f[522]" "f[523]" "f[524]" "f[525]" "f[526]" "f[527]" "f[528]" "f[529]" "f[530]" "f[531]" "f[532]" "f[533]" "f[534]" "f[535]" "f[536]" "f[537]" "f[538]" "f[539]" "f[540]" "f[541]" "f[542]" "f[543]" "f[544]" "f[545]" "f[546]" "f[547]" "f[548]" "f[549]" "f[550]" "f[551]" "f[552]" "f[553]" "f[554]" "f[555]" "f[556]" "f[557]" "f[558]" "f[559]" "f[560]" "f[561]" "f[562]" "f[563]" "f[564]" "f[565]" "f[566]" "f[567]" "f[568]" "f[569]" "f[570]" "f[571]" "f[572]" "f[573]" "f[574]" "f[575]" "f[576]" "f[577]" "f[578]" "f[579]" "f[580]" "f[581]" "f[582]" "f[583]" "f[584]" "f[585]" "f[586]" "f[587]" "f[588]" "f[589]" "f[590]" "f[591]" "f[592]" "f[593]" "f[594]" "f[595]" "f[596]" "f[597]" "f[598]" "f[599]" "f[600]" "f[601]" "f[602]" "f[603]" "f[604]" "f[605]" "f[606]" "f[607]" "f[608]" "f[609]" "f[610]" "f[611]" "f[612]" "f[613]" "f[614]" "f[615]" "f[616]" "f[617]" "f[618]" "f[619]" "f[620]" "f[621]" "f[622]" "f[623]" "f[624]" "f[625]" "f[626]" "f[627]" "f[628]" "f[629]" "f[630]" "f[631]" "f[632]" "f[633]" "f[634]" "f[635]" "f[636]" "f[637]" "f[638]" "f[639]" "f[640]" "f[641]" "f[642]" "f[643]" "f[644]" "f[645]" "f[646]" "f[647]" "f[648]" "f[649]" "f[650]" "f[651]" "f[652]" "f[653]" "f[654]" "f[655]" "f[656]" "f[657]" "f[658]" "f[659]" "f[660]" "f[661]" "f[662]" "f[663]" "f[664]" "f[665]" "f[666]" "f[667]" "f[668]" "f[669]" "f[670]" "f[671]" "f[672]" "f[673]" "f[674]" "f[675]" "f[676]" "f[677]" "f[678]" "f[679]" "f[680]" "f[681]" "f[682]" "f[683]" "f[684]" "f[685]" "f[686]" "f[687]" "f[688]" "f[689]" "f[690]" "f[691]" "f[692]" "f[693]" "f[694]" "f[695]" "f[696]" "f[697]" "f[698]" "f[699]" "f[700]" "f[701]" "f[702]" "f[703]" "f[704]" "f[705]" "f[706]" "f[707]" "f[708]" "f[709]" "f[710]" "f[711]" "f[712]" "f[713]" "f[714]" "f[715]" "f[716]" "f[717]" "f[718]" "f[719]" "f[720]" "f[721]" "f[722]" "f[723]" "f[724]" "f[725]" "f[726]" "f[727]" "f[728]" "f[729]" "f[730]" "f[731]" "f[732]" "f[733]" "f[734]" "f[735]" "f[736]" "f[737]" "f[738]" "f[739]" "f[740]" "f[741]" "f[742]" "f[743]" "f[744]" "f[745]" "f[746]" "f[747]" "f[748]" "f[749]" "f[750]" "f[751]" "f[752]" "f[753]" "f[754]" "f[755]" "f[756]" "f[757]" "f[758]" "f[759]" "f[760]" "f[761]" "f[762]" "f[763]" "f[764]" "f[765]" "f[766]" "f[767]" "f[768]" "f[769]" "f[770]" "f[771]" "f[772]" "f[773]" "f[774]" "f[775]" "f[776]" "f[777]" "f[778]" "f[779]" "f[780]" "f[781]" "f[782]" "f[783]" "f[784]" "f[785]" "f[786]" "f[787]" "f[788]" "f[789]" "f[790]" "f[791]" "f[792]" "f[793]" "f[794]" "f[795]" "f[796]" "f[797]" "f[798]" "f[799]" "f[800]" "f[801]" "f[802]" "f[803]" "f[804]" "f[805]" "f[806]" "f[807]" "f[808]" "f[809]" "f[810]" "f[811]" "f[812]" "f[813]" "f[814]" "f[815]" "f[816]" "f[817]" "f[818]" "f[819]" "f[820]" "f[821]" "f[822]" "f[823]" "f[824]" "f[825]" "f[826]" "f[827]" "f[828]" "f[829]" "f[830]" "f[831]" "f[832]" "f[833]" "f[834]" "f[835]" "f[836]" "f[837]" "f[838]" "f[839]" "f[840]" "f[841]" "f[842]" "f[843]" "f[844]" "f[845]" "f[846]" "f[847]" "f[848]" "f[849]" "f[850]" "f[851]" "f[852]" "f[853]" "f[854]" "f[855]" "f[856]" "f[857]" "f[858]" "f[859]" "f[860]" "f[861]" "f[862]" "f[863]" "f[864]" "f[865]" "f[866]" "f[867]" "f[868]" "f[869]" "f[870]" "f[871]" "f[872]" "f[873]" "f[874]" "f[875]" "f[876]" "f[877]" "f[878]" "f[879]" "f[880]" "f[881]" "f[882]" "f[883]" "f[884]" "f[885]" "f[886]" "f[887]" "f[888]" "f[889]" "f[890]" "f[891]" "f[892]" "f[893]" "f[894]" "f[895]" "f[896]" "f[897]" "f[898]" "f[899]" "f[900]" "f[901]" "f[902]" "f[903]" "f[904]" "f[905]" "f[906]" "f[907]" "f[908]" "f[909]" "f[910]" "f[911]" "f[912]" "f[913]" "f[914]" "f[915]" "f[916]" "f[917]" "f[918]" "f[919]" "f[920]" "f[921]" "f[922]" "f[923]" "f[924]" "f[925]" "f[926]" "f[927]" "f[928]" "f[929]" "f[930]" "f[931]" "f[932]" "f[933]" "f[934]" "f[935]" "f[936]" "f[937]" "f[938]" "f[939]" "f[940]" "f[941]" "f[942]" "f[943]" "f[944]" "f[945]" "f[946]" "f[947]" "f[948]" "f[949]" "f[950]" "f[951]" "f[952]" "f[953]" "f[954]" "f[955]" "f[956]" "f[957]" "f[958]" "f[959]" "f[960]" "f[961]" "f[962]" "f[963]" "f[964]" "f[965]" "f[966]" "f[967]" "f[968]" "f[969]" "f[970]" "f[971]" "f[972]" "f[973]" "f[974]" "f[975]" "f[976]" "f[977]" "f[978]" "f[979]" "f[980]" "f[981]" "f[982]" "f[983]" "f[984]" "f[985]" "f[986]" "f[987]" "f[988]" "f[989]" "f[990]" "f[991]" "f[992]" "f[993]" "f[994]" "f[995]" "f[996]" "f[997]" "f[998]" "f[999]" "f[1000]" "f[1001]" "f[1002]" "f[1003]" "f[1004]" "f[1005]" "f[1006]" "f[1007]" "f[1008]" "f[1009]" "f[1010]" "f[1011]" "f[1012]" "f[1013]" "f[1014]" "f[1015]" "f[1016]" "f[1017]" "f[1018]" "f[1019]" "f[1020]" "f[1021]" "f[1022]" "f[1023]" "f[1024]" "f[1025]" "f[1026]" "f[1027]" "f[1028]" "f[1029]" "f[1030]" "f[1031]" "f[1032]" "f[1033]" "f[1034]" "f[1035]" "f[1036]" "f[1037]" "f[1038]" "f[1039]" "f[1040]" "f[1041]" "f[1042]" "f[1043]" "f[1044]" "f[1045]" "f[1046]" "f[1047]" "f[1048]" "f[1049]" "f[1050]" "f[1051]" "f[1052]" "f[1053]" "f[1054]" "f[1055]" "f[1056]" "f[1057]" "f[1058]" "f[1059]" "f[1060]" "f[1061]" "f[1062]" "f[1063]" "f[1064]" "f[1065]" "f[1066]" "f[1067]" "f[1068]" "f[1069]" "f[1070]" "f[1071]" "f[1072]" "f[1073]" "f[1074]" "f[1075]" "f[1076]" "f[1077]" "f[1078]" "f[1079]" "f[1080]" "f[1081]" "f[1082]" "f[1083]" "f[1084]" "f[1085]" "f[1086]" "f[1087]" "f[1088]" "f[1089]" "f[1090]" "f[1091]" "f[1092]" "f[1093]" "f[1094]" "f[1095]" "f[1096]" "f[1097]" "f[1098]" "f[1099]" "f[1100]" "f[1101]" "f[1102]" "f[1103]" "f[1104]" "f[1105]" "f[1106]" "f[1107]" "f[1108]" "f[1109]" "f[1110]" "f[1111]" "f[1112]" "f[1113]" "f[1114]" "f[1115]" "f[1116]" "f[1117]" "f[1118]" "f[1119]" "f[1120]" "f[1121]" "f[1122]" "f[1123]" "f[1124]" "f[1125]" "f[1126]" "f[1127]" "f[1128]" "f[1129]" "f[1130]" "f[1131]" "f[1132]" "f[1133]" "f[1134]" "f[1135]" "f[1136]" "f[1137]" "f[1138]" "f[1139]" "f[1140]" "f[1141]" "f[1142]" "f[1143]" "f[1144]" "f[1145]" "f[1146]" "f[1147]" "f[1148]" "f[1149]" "f[1150]" "f[1151]" "f[1152]" "f[1153]" "f[1154]" "f[1155]" "f[1156]" "f[1157]" "f[1158]" "f[1159]" "f[1160]" "f[1161]" "f[1162]" "f[1163]" "f[1164]" "f[1165]" "f[1166]" "f[1167]" "f[1168]" "f[1169]" "f[1170]" "f[1171]" "f[1172]" "f[1173]" "f[1174]" "f[1175]" "f[1176]" "f[1177]" "f[1178]" "f[1179]" "f[1180]" "f[1181]" "f[1182]" "f[1183]" "f[1184]" "f[1185]" "f[1186]" "f[1187]" "f[1188]" "f[1189]" "f[1190]" "f[1191]" "f[1192]" "f[1193]" "f[1194]" "f[1195]" "f[1196]" "f[1197]" "f[1198]" "f[1199]" "f[1200]" "f[1201]" "f[1202]" "f[1203]" "f[1204]" "f[1205]" "f[1206]" "f[1207]" "f[1208]" "f[1209]" "f[1210]" "f[1211]" "f[1212]" "f[1213]" "f[1214]" "f[1215]" "f[1216]" "f[1217]" "f[1218]" "f[1219]" "f[1220]" "f[1221]" "f[1222]" "f[1223]" "f[1224]" "f[1225]" "f[1226]" "f[1227]" "f[1228]" "f[1229]" "f[1230]" "f[1231]" "f[1232]" "f[1233]" "f[1234]" "f[1235]" "f[1236]" "f[1237]" "f[1238]" "f[1239]" "f[1240]" "f[1241]" "f[1242]" "f[1243]" "f[1244]" "f[1245]" "f[1246]" "f[1247]" "f[1248]" "f[1249]" "f[1250]" "f[1251]" "f[1252]" "f[1253]" "f[1254]" "f[1255]" "f[1256]" "f[1257]" "f[1258]" "f[1259]" "f[1260]" "f[1261]" "f[1262]" "f[1263]" "f[1264]" "f[1265]" "f[1266]" "f[1267]" "f[1268]" "f[1269]" "f[1270]" "f[1271]" "f[1272]" "f[1273]" "f[1274]" "f[1275]" "f[1276]" "f[1277]" "f[1278]" "f[1279]" "f[1280]" "f[1281]" "f[1282]" "f[1283]" "f[1284]" "f[1285]" "f[1286]" "f[1287]" "f[1288]" "f[1289]" "f[1290]" "f[1291]" "f[1292]" "f[1293]" "f[1294]" "f[1295]" "f[1296]" "f[1297]" "f[1298]" "f[1299]" "f[1300]" "f[1301]" "f[1302]" "f[1303]" "f[1304]" "f[1305]" "f[1306]" "f[1307]" "f[1308]" "f[1309]" "f[1310]" "f[1311]" "f[1312]" "f[1313]" "f[1314]" "f[1315]" "f[1316]" "f[1317]" "f[1318]" "f[1319]" "f[1320]" "f[1321]" "f[1322]" "f[1323]" "f[1324]" "f[1325]" "f[1326]" "f[1327]" "f[1328]" "f[1329]" "f[1330]" "f[1331]" "f[1332]" "f[1333]" "f[1334]" "f[1335]" "f[1336]" "f[1337]" "f[1338]" "f[1339]" "f[1340]" "f[1341]" "f[1342]" "f[1343]" "f[1344]" "f[1345]" "f[1346]" "f[1347]" "f[1348]" "f[1349]" "f[1350]" "f[1351]" "f[1352]" "f[1353]" "f[1354]" "f[1355]" "f[1356]" "f[1357]" "f[1358]" "f[1359]" "f[1360]" "f[1361]" "f[1362]" "f[1363]" "f[1364]" "f[1365]" "f[1366]" "f[1367]" "f[1368]" "f[1369]" "f[1370]" "f[1371]" "f[1372]" "f[1373]" "f[1374]" "f[1375]" "f[1376]" "f[1377]" "f[1378]" "f[1379]" "f[1380]" "f[1381]" "f[1382]" "f[1383]" "f[1384]" "f[1385]" "f[1386]" "f[1387]" "f[1388]" "f[1389]" "f[1390]" "f[1391]" "f[1392]" "f[1393]" "f[1394]" "f[1395]" "f[1396]" "f[1397]" "f[1398]" "f[1399]" "f[1400]" "f[1401]" "f[1402]" "f[1403]" "f[1404]" "f[1405]";
+createNode groupId -n "groupId6";
+	rename -uid "0FEEA9C4-4742-9DE9-2A1A-B5BC5208DE92";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts4";
+	rename -uid "4ED60AD3-4638-0FF2-C4DE-729969628593";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId7";
+	rename -uid "758C5B45-4FCE-A810-B3F5-5E803A9455FB";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts5";
+	rename -uid "08E7BDAC-440C-BC2C-16BF-138D3F36767C";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId8";
+	rename -uid "7163A2B1-41C7-8B13-9F65-16828BC9D266";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts6";
+	rename -uid "2315A0B9-4204-558A-DF00-6DB178D7205A";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId9";
+	rename -uid "F930EF3C-4F4F-1620-86FB-559CBF807D5E";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts7";
+	rename -uid "CEA89EDF-42F8-7ED5-4609-468D9E1519DB";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 436 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]" "f[116]" "f[117]" "f[118]" "f[119]" "f[120]" "f[121]" "f[122]" "f[123]" "f[124]" "f[125]" "f[126]" "f[127]" "f[128]" "f[129]" "f[130]" "f[131]" "f[132]" "f[133]" "f[134]" "f[135]" "f[136]" "f[137]" "f[138]" "f[139]" "f[140]" "f[141]" "f[142]" "f[143]" "f[144]" "f[145]" "f[146]" "f[147]" "f[148]" "f[149]" "f[150]" "f[151]" "f[152]" "f[153]" "f[154]" "f[155]" "f[156]" "f[157]" "f[158]" "f[159]" "f[160]" "f[161]" "f[162]" "f[163]" "f[164]" "f[165]" "f[166]" "f[167]" "f[168]" "f[169]" "f[170]" "f[171]" "f[172]" "f[173]" "f[174]" "f[175]" "f[176]" "f[177]" "f[178]" "f[179]" "f[180]" "f[181]" "f[182]" "f[183]" "f[184]" "f[185]" "f[186]" "f[187]" "f[188]" "f[189]" "f[190]" "f[191]" "f[192]" "f[193]" "f[194]" "f[195]" "f[196]" "f[197]" "f[198]" "f[199]" "f[200]" "f[201]" "f[202]" "f[203]" "f[204]" "f[205]" "f[206]" "f[207]" "f[208]" "f[209]" "f[210]" "f[211]" "f[212]" "f[213]" "f[214]" "f[215]" "f[216]" "f[217]" "f[218]" "f[219]" "f[220]" "f[221]" "f[222]" "f[223]" "f[224]" "f[225]" "f[226]" "f[227]" "f[228]" "f[229]" "f[230]" "f[231]" "f[232]" "f[233]" "f[234]" "f[235]" "f[236]" "f[237]" "f[238]" "f[239]" "f[240]" "f[241]" "f[242]" "f[243]" "f[244]" "f[245]" "f[246]" "f[247]" "f[248]" "f[249]" "f[250]" "f[251]" "f[252]" "f[253]" "f[254]" "f[255]" "f[256]" "f[257]" "f[258]" "f[259]" "f[260]" "f[261]" "f[262]" "f[263]" "f[264]" "f[265]" "f[266]" "f[267]" "f[268]" "f[269]" "f[270]" "f[271]" "f[272]" "f[273]" "f[274]" "f[275]" "f[276]" "f[277]" "f[278]" "f[279]" "f[280]" "f[281]" "f[282]" "f[283]" "f[284]" "f[285]" "f[286]" "f[287]" "f[288]" "f[289]" "f[290]" "f[291]" "f[292]" "f[293]" "f[294]" "f[295]" "f[296]" "f[297]" "f[298]" "f[299]" "f[300]" "f[301]" "f[302]" "f[303]" "f[304]" "f[305]" "f[306]" "f[307]" "f[308]" "f[309]" "f[310]" "f[311]" "f[312]" "f[313]" "f[314]" "f[315]" "f[316]" "f[317]" "f[318]" "f[319]" "f[320]" "f[321]" "f[322]" "f[323]" "f[324]" "f[325]" "f[326]" "f[327]" "f[328]" "f[329]" "f[330]" "f[331]" "f[332]" "f[333]" "f[334]" "f[335]" "f[336]" "f[337]" "f[338]" "f[339]" "f[340]" "f[341]" "f[342]" "f[343]" "f[344]" "f[345]" "f[346]" "f[347]" "f[348]" "f[349]" "f[350]" "f[351]" "f[352]" "f[353]" "f[354]" "f[355]" "f[356]" "f[357]" "f[358]" "f[359]" "f[360]" "f[361]" "f[362]" "f[363]" "f[364]" "f[365]" "f[366]" "f[367]" "f[368]" "f[369]" "f[370]" "f[371]" "f[372]" "f[373]" "f[374]" "f[375]" "f[376]" "f[377]" "f[378]" "f[379]" "f[380]" "f[381]" "f[382]" "f[383]" "f[384]" "f[385]" "f[386]" "f[387]" "f[388]" "f[389]" "f[390]" "f[391]" "f[392]" "f[393]" "f[394]" "f[395]" "f[396]" "f[397]" "f[398]" "f[399]" "f[400]" "f[401]" "f[402]" "f[403]" "f[404]" "f[405]" "f[406]" "f[407]" "f[408]" "f[409]" "f[410]" "f[411]" "f[412]" "f[413]" "f[414]" "f[415]" "f[416]" "f[417]" "f[418]" "f[419]" "f[420]" "f[421]" "f[422]" "f[423]" "f[424]" "f[425]" "f[426]" "f[427]" "f[428]" "f[429]" "f[430]" "f[431]" "f[432]" "f[433]" "f[434]" "f[435]";
+createNode groupId -n "groupId10";
+	rename -uid "119F42FC-4B50-A59D-867E-D1A46B41A447";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts8";
+	rename -uid "80CD5D8B-47A1-115C-5A8A-5E99F166DA4D";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId11";
+	rename -uid "E98E2DC4-4CEC-533A-674E-12988CCB0D1E";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts9";
+	rename -uid "A2F5D5D7-432B-1B2B-0E5D-93A59E6BEEB1";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId12";
+	rename -uid "F1EF4CC4-4E3A-8745-1400-F3835ACB70DF";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts10";
+	rename -uid "D041DEBB-499F-84AA-C240-CEA719E18514";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId13";
+	rename -uid "6C1F1030-494C-E2D6-326B-599D0FF18FDC";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts11";
+	rename -uid "F40FAB64-4235-27E8-AF16-46838365A30D";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId14";
+	rename -uid "D8EBB677-440B-1849-BE88-07A418C16A22";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts12";
+	rename -uid "03C9FD72-4E56-F85A-8E1B-E5A91A0ADD8B";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId15";
+	rename -uid "D1431E60-4A5B-01C6-9B12-FEB693E4BE73";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts13";
+	rename -uid "C8B5E416-4FD9-7CEB-A4AE-E8A7251C3358";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId16";
+	rename -uid "6223A234-4369-33FC-5BCA-9EBFE3B679AF";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts14";
+	rename -uid "92022D10-425A-3DCD-5E3D-E2A4041AD7B5";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId17";
+	rename -uid "88C4017A-4EE5-3D17-C697-AE9EBA24AA99";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts15";
+	rename -uid "2EF3779C-4507-9438-F3F1-DBB20A505E00";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId18";
+	rename -uid "52EE90BD-46A4-E4FC-0068-47879C4B8C62";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts16";
+	rename -uid "11721256-494D-3285-28EE-DAA9CCFBC849";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId19";
+	rename -uid "B5EFE6B3-474E-FEDB-A6C5-C6B9C5668602";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts17";
+	rename -uid "7195DF27-44AC-856D-D9B8-9C86247C298A";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId20";
+	rename -uid "D2CE1E1C-42E5-2AAC-C71F-03A252367857";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts18";
+	rename -uid "BB8F6458-497A-90B2-E160-B5AC08509BC5";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId21";
+	rename -uid "F5D07BF3-441E-9A9E-F9B8-46A06DE8317B";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts19";
+	rename -uid "EBD69B28-40A9-5BBC-102D-F8B8557901A2";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId22";
+	rename -uid "6F3F793F-4338-76EC-75A7-F6B79475139C";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts20";
+	rename -uid "A0E2A07E-49B4-9AF8-08C8-0BBE0B1D07DF";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId23";
+	rename -uid "5AF13A74-49B4-7575-985D-B6B7ABF4AFAC";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts21";
+	rename -uid "A78046B4-421B-168E-FA16-45958FDA3AEC";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId24";
+	rename -uid "A9E36A64-4D86-73D5-B5C0-E2A9E1428A88";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts22";
+	rename -uid "AEA97CDB-45C2-3FE9-CA7D-A8B792818A07";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0]";
+createNode groupId -n "groupId25";
+	rename -uid "31D49378-4F67-8607-3C41-A2AE5DD62456";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts23";
+	rename -uid "5D0305DF-4523-FAE3-861B-03BE11D03EFC";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 42 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]";
+createNode groupId -n "groupId26";
+	rename -uid "384C922E-4A1B-4909-5B16-BB95BFA8E3EA";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts24";
+	rename -uid "A94478A3-4BEF-2002-173A-AAA75AB8FFAB";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 18 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]";
+createNode polyUnite -n "polyUnite3";
+	rename -uid "AB3B66A6-4C64-A8D9-B1B6-D1A2C5EEAD58";
+	setAttr -s 2 ".ip";
+	setAttr -s 2 ".im";
+createNode groupId -n "groupId27";
+	rename -uid "BD7E9161-4EE6-797B-6BB0-B78FC7A889A3";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts25";
+	rename -uid "B2B5B8BC-45FB-7644-BFAB-47BBA1F2AC8A";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0:339]";
+createNode groupId -n "groupId28";
+	rename -uid "681C83EE-40BE-436E-56D2-AA9F5A576DFC";
+	setAttr ".ihi" 0;
+createNode polyUnite -n "polyUnite4";
+	rename -uid "60903D0E-4F36-8A81-8AC0-C2958CA053AB";
+	setAttr -s 2 ".ip";
+	setAttr -s 2 ".im";
+createNode groupId -n "groupId29";
+	rename -uid "A721833C-4B1C-8454-17BC-9C9358A8E94B";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts26";
+	rename -uid "D57505B2-497C-1753-0D9A-9CA113AF61EB";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0:59]";
+createNode groupId -n "groupId30";
+	rename -uid "F710C4FF-4948-325C-53A2-AFA200F7AEF3";
+	setAttr ".ihi" 0;
+createNode polyUnite -n "polyUnite5";
+	rename -uid "C5073474-4812-BE21-54AF-C3A1127F041F";
+	setAttr -s 2 ".ip";
+	setAttr -s 2 ".im";
+createNode groupId -n "groupId31";
+	rename -uid "23E8CD69-4C79-0C05-D92C-20BDE11CE8AC";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts27";
+	rename -uid "8EAAED71-447B-0E8D-26DC-DB80778B019D";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0:1841]";
+createNode groupId -n "groupId32";
+	rename -uid "CEE852C1-4016-48C9-C0A3-149CAADDBC92";
+	setAttr ".ihi" 0;
+createNode polyUnite -n "polyUnite6";
+	rename -uid "A8F4E223-4DC1-E31D-50E8-DAA31ECCBC1B";
+	setAttr -s 9 ".ip";
+	setAttr -s 9 ".im";
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId24";
+	rename -uid "92FE3B2B-4A44-B61D-B97D-2BB9D24021A7";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId25";
+	rename -uid "E79DE546-477A-EB73-A3A6-36997D5433B9";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId26";
+	rename -uid "7A462474-4CD4-038F-7713-7A89E74F12B9";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId27";
+	rename -uid "8E6E895C-41F5-E5D6-1C6E-F78857CDEFF0";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId28";
+	rename -uid "756AAC5F-44A7-FE1C-FB15-56A76928FAB1";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId29";
+	rename -uid "542DE933-49E6-2E00-122F-A2BE1DA5F049";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId30";
+	rename -uid "938A0E00-45AC-EB81-C03E-55BDD1C3CB25";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId31";
+	rename -uid "D32645E8-4137-20C5-8EE6-9BA8F60C71A0";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId32";
+	rename -uid "28E746AE-4A80-3413-BF82-B6B27CAA7B41";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId33";
+	rename -uid "23A3B49A-43F2-61BC-79C1-EFA3D7C8D927";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId34";
+	rename -uid "26C5CFEC-4F1D-E184-6121-15A7C014846C";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId35";
+	rename -uid "3DE755E8-4736-A17C-57A5-DB9B338A0F37";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId36";
+	rename -uid "CC634E92-4A8F-A824-0579-A196ED4CBEC4";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId37";
+	rename -uid "75252C54-4723-65E4-45FC-E39AE2387AFE";
+	setAttr ".ihi" 0;
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId38";
+	rename -uid "36C938D3-4093-27F1-BD02-3B81E9F65E2D";
+	setAttr ".ihi" 0;
+createNode groupParts -n "Tavern_Counter_and_Barrel:groupParts2";
+	rename -uid "256C6BC1-45A5-F063-6D3C-A28FDAB8F188";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0:2127]";
+createNode groupId -n "Tavern_Counter_and_Barrel:groupId39";
+	rename -uid "19277E83-4598-A867-1F29-4A927A720E9E";
+	setAttr ".ihi" 0;
+createNode polySeparate -n "polySeparate2";
+	rename -uid "AE0DBA90-479B-DB86-89A8-98BE1B6639C2";
+	setAttr ".ic" 9;
+	setAttr -s 9 ".out";
+createNode groupId -n "groupId33";
+	rename -uid "C8ED7731-401D-643C-46F2-21A390B5C5B6";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts28";
+	rename -uid "9CC2C4B6-44A4-37DD-3435-9A9C88FDB6DB";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 152 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]" "f[116]" "f[117]" "f[118]" "f[119]" "f[120]" "f[121]" "f[122]" "f[123]" "f[124]" "f[125]" "f[126]" "f[127]" "f[128]" "f[129]" "f[130]" "f[131]" "f[132]" "f[133]" "f[134]" "f[135]" "f[136]" "f[137]" "f[138]" "f[139]" "f[140]" "f[141]" "f[142]" "f[143]" "f[144]" "f[145]" "f[146]" "f[147]" "f[148]" "f[149]" "f[150]" "f[151]";
+createNode groupId -n "groupId34";
+	rename -uid "BCF0C9B2-4BB4-96AE-8163-58B9E184635C";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts29";
+	rename -uid "F75AF7D8-4A8A-159F-D417-F5A1F257448A";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 704 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]" "f[116]" "f[117]" "f[118]" "f[119]" "f[120]" "f[121]" "f[122]" "f[123]" "f[124]" "f[125]" "f[126]" "f[127]" "f[128]" "f[129]" "f[130]" "f[131]" "f[132]" "f[133]" "f[134]" "f[135]" "f[136]" "f[137]" "f[138]" "f[139]" "f[140]" "f[141]" "f[142]" "f[143]" "f[144]" "f[145]" "f[146]" "f[147]" "f[148]" "f[149]" "f[150]" "f[151]" "f[152]" "f[153]" "f[154]" "f[155]" "f[156]" "f[157]" "f[158]" "f[159]" "f[160]" "f[161]" "f[162]" "f[163]" "f[164]" "f[165]" "f[166]" "f[167]" "f[168]" "f[169]" "f[170]" "f[171]" "f[172]" "f[173]" "f[174]" "f[175]" "f[176]" "f[177]" "f[178]" "f[179]" "f[180]" "f[181]" "f[182]" "f[183]" "f[184]" "f[185]" "f[186]" "f[187]" "f[188]" "f[189]" "f[190]" "f[191]" "f[192]" "f[193]" "f[194]" "f[195]" "f[196]" "f[197]" "f[198]" "f[199]" "f[200]" "f[201]" "f[202]" "f[203]" "f[204]" "f[205]" "f[206]" "f[207]" "f[208]" "f[209]" "f[210]" "f[211]" "f[212]" "f[213]" "f[214]" "f[215]" "f[216]" "f[217]" "f[218]" "f[219]" "f[220]" "f[221]" "f[222]" "f[223]" "f[224]" "f[225]" "f[226]" "f[227]" "f[228]" "f[229]" "f[230]" "f[231]" "f[232]" "f[233]" "f[234]" "f[235]" "f[236]" "f[237]" "f[238]" "f[239]" "f[240]" "f[241]" "f[242]" "f[243]" "f[244]" "f[245]" "f[246]" "f[247]" "f[248]" "f[249]" "f[250]" "f[251]" "f[252]" "f[253]" "f[254]" "f[255]" "f[256]" "f[257]" "f[258]" "f[259]" "f[260]" "f[261]" "f[262]" "f[263]" "f[264]" "f[265]" "f[266]" "f[267]" "f[268]" "f[269]" "f[270]" "f[271]" "f[272]" "f[273]" "f[274]" "f[275]" "f[276]" "f[277]" "f[278]" "f[279]" "f[280]" "f[281]" "f[282]" "f[283]" "f[284]" "f[285]" "f[286]" "f[287]" "f[288]" "f[289]" "f[290]" "f[291]" "f[292]" "f[293]" "f[294]" "f[295]" "f[296]" "f[297]" "f[298]" "f[299]" "f[300]" "f[301]" "f[302]" "f[303]" "f[304]" "f[305]" "f[306]" "f[307]" "f[308]" "f[309]" "f[310]" "f[311]" "f[312]" "f[313]" "f[314]" "f[315]" "f[316]" "f[317]" "f[318]" "f[319]" "f[320]" "f[321]" "f[322]" "f[323]" "f[324]" "f[325]" "f[326]" "f[327]" "f[328]" "f[329]" "f[330]" "f[331]" "f[332]" "f[333]" "f[334]" "f[335]" "f[336]" "f[337]" "f[338]" "f[339]" "f[340]" "f[341]" "f[342]" "f[343]" "f[344]" "f[345]" "f[346]" "f[347]" "f[348]" "f[349]" "f[350]" "f[351]" "f[352]" "f[353]" "f[354]" "f[355]" "f[356]" "f[357]" "f[358]" "f[359]" "f[360]" "f[361]" "f[362]" "f[363]" "f[364]" "f[365]" "f[366]" "f[367]" "f[368]" "f[369]" "f[370]" "f[371]" "f[372]" "f[373]" "f[374]" "f[375]" "f[376]" "f[377]" "f[378]" "f[379]" "f[380]" "f[381]" "f[382]" "f[383]" "f[384]" "f[385]" "f[386]" "f[387]" "f[388]" "f[389]" "f[390]" "f[391]" "f[392]" "f[393]" "f[394]" "f[395]" "f[396]" "f[397]" "f[398]" "f[399]" "f[400]" "f[401]" "f[402]" "f[403]" "f[404]" "f[405]" "f[406]" "f[407]" "f[408]" "f[409]" "f[410]" "f[411]" "f[412]" "f[413]" "f[414]" "f[415]" "f[416]" "f[417]" "f[418]" "f[419]" "f[420]" "f[421]" "f[422]" "f[423]" "f[424]" "f[425]" "f[426]" "f[427]" "f[428]" "f[429]" "f[430]" "f[431]" "f[432]" "f[433]" "f[434]" "f[435]" "f[436]" "f[437]" "f[438]" "f[439]" "f[440]" "f[441]" "f[442]" "f[443]" "f[444]" "f[445]" "f[446]" "f[447]" "f[448]" "f[449]" "f[450]" "f[451]" "f[452]" "f[453]" "f[454]" "f[455]" "f[456]" "f[457]" "f[458]" "f[459]" "f[460]" "f[461]" "f[462]" "f[463]" "f[464]" "f[465]" "f[466]" "f[467]" "f[468]" "f[469]" "f[470]" "f[471]" "f[472]" "f[473]" "f[474]" "f[475]" "f[476]" "f[477]" "f[478]" "f[479]" "f[480]" "f[481]" "f[482]" "f[483]" "f[484]" "f[485]" "f[486]" "f[487]" "f[488]" "f[489]" "f[490]" "f[491]" "f[492]" "f[493]" "f[494]" "f[495]" "f[496]" "f[497]" "f[498]" "f[499]" "f[500]" "f[501]" "f[502]" "f[503]" "f[504]" "f[505]" "f[506]" "f[507]" "f[508]" "f[509]" "f[510]" "f[511]" "f[512]" "f[513]" "f[514]" "f[515]" "f[516]" "f[517]" "f[518]" "f[519]" "f[520]" "f[521]" "f[522]" "f[523]" "f[524]" "f[525]" "f[526]" "f[527]" "f[528]" "f[529]" "f[530]" "f[531]" "f[532]" "f[533]" "f[534]" "f[535]" "f[536]" "f[537]" "f[538]" "f[539]" "f[540]" "f[541]" "f[542]" "f[543]" "f[544]" "f[545]" "f[546]" "f[547]" "f[548]" "f[549]" "f[550]" "f[551]" "f[552]" "f[553]" "f[554]" "f[555]" "f[556]" "f[557]" "f[558]" "f[559]" "f[560]" "f[561]" "f[562]" "f[563]" "f[564]" "f[565]" "f[566]" "f[567]" "f[568]" "f[569]" "f[570]" "f[571]" "f[572]" "f[573]" "f[574]" "f[575]" "f[576]" "f[577]" "f[578]" "f[579]" "f[580]" "f[581]" "f[582]" "f[583]" "f[584]" "f[585]" "f[586]" "f[587]" "f[588]" "f[589]" "f[590]" "f[591]" "f[592]" "f[593]" "f[594]" "f[595]" "f[596]" "f[597]" "f[598]" "f[599]" "f[600]" "f[601]" "f[602]" "f[603]" "f[604]" "f[605]" "f[606]" "f[607]" "f[608]" "f[609]" "f[610]" "f[611]" "f[612]" "f[613]" "f[614]" "f[615]" "f[616]" "f[617]" "f[618]" "f[619]" "f[620]" "f[621]" "f[622]" "f[623]" "f[624]" "f[625]" "f[626]" "f[627]" "f[628]" "f[629]" "f[630]" "f[631]" "f[632]" "f[633]" "f[634]" "f[635]" "f[636]" "f[637]" "f[638]" "f[639]" "f[640]" "f[641]" "f[642]" "f[643]" "f[644]" "f[645]" "f[646]" "f[647]" "f[648]" "f[649]" "f[650]" "f[651]" "f[652]" "f[653]" "f[654]" "f[655]" "f[656]" "f[657]" "f[658]" "f[659]" "f[660]" "f[661]" "f[662]" "f[663]" "f[664]" "f[665]" "f[666]" "f[667]" "f[668]" "f[669]" "f[670]" "f[671]" "f[672]" "f[673]" "f[674]" "f[675]" "f[676]" "f[677]" "f[678]" "f[679]" "f[680]" "f[681]" "f[682]" "f[683]" "f[684]" "f[685]" "f[686]" "f[687]" "f[688]" "f[689]" "f[690]" "f[691]" "f[692]" "f[693]" "f[694]" "f[695]" "f[696]" "f[697]" "f[698]" "f[699]" "f[700]" "f[701]" "f[702]" "f[703]";
+createNode groupId -n "groupId35";
+	rename -uid "2BCAB27E-4D14-E5A6-BE09-C78F9BFCA7BC";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts30";
+	rename -uid "DCBE6B2B-4E20-0AAC-042C-868967FE637A";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 320 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]" "f[116]" "f[117]" "f[118]" "f[119]" "f[120]" "f[121]" "f[122]" "f[123]" "f[124]" "f[125]" "f[126]" "f[127]" "f[128]" "f[129]" "f[130]" "f[131]" "f[132]" "f[133]" "f[134]" "f[135]" "f[136]" "f[137]" "f[138]" "f[139]" "f[140]" "f[141]" "f[142]" "f[143]" "f[144]" "f[145]" "f[146]" "f[147]" "f[148]" "f[149]" "f[150]" "f[151]" "f[152]" "f[153]" "f[154]" "f[155]" "f[156]" "f[157]" "f[158]" "f[159]" "f[160]" "f[161]" "f[162]" "f[163]" "f[164]" "f[165]" "f[166]" "f[167]" "f[168]" "f[169]" "f[170]" "f[171]" "f[172]" "f[173]" "f[174]" "f[175]" "f[176]" "f[177]" "f[178]" "f[179]" "f[180]" "f[181]" "f[182]" "f[183]" "f[184]" "f[185]" "f[186]" "f[187]" "f[188]" "f[189]" "f[190]" "f[191]" "f[192]" "f[193]" "f[194]" "f[195]" "f[196]" "f[197]" "f[198]" "f[199]" "f[200]" "f[201]" "f[202]" "f[203]" "f[204]" "f[205]" "f[206]" "f[207]" "f[208]" "f[209]" "f[210]" "f[211]" "f[212]" "f[213]" "f[214]" "f[215]" "f[216]" "f[217]" "f[218]" "f[219]" "f[220]" "f[221]" "f[222]" "f[223]" "f[224]" "f[225]" "f[226]" "f[227]" "f[228]" "f[229]" "f[230]" "f[231]" "f[232]" "f[233]" "f[234]" "f[235]" "f[236]" "f[237]" "f[238]" "f[239]" "f[240]" "f[241]" "f[242]" "f[243]" "f[244]" "f[245]" "f[246]" "f[247]" "f[248]" "f[249]" "f[250]" "f[251]" "f[252]" "f[253]" "f[254]" "f[255]" "f[256]" "f[257]" "f[258]" "f[259]" "f[260]" "f[261]" "f[262]" "f[263]" "f[264]" "f[265]" "f[266]" "f[267]" "f[268]" "f[269]" "f[270]" "f[271]" "f[272]" "f[273]" "f[274]" "f[275]" "f[276]" "f[277]" "f[278]" "f[279]" "f[280]" "f[281]" "f[282]" "f[283]" "f[284]" "f[285]" "f[286]" "f[287]" "f[288]" "f[289]" "f[290]" "f[291]" "f[292]" "f[293]" "f[294]" "f[295]" "f[296]" "f[297]" "f[298]" "f[299]" "f[300]" "f[301]" "f[302]" "f[303]" "f[304]" "f[305]" "f[306]" "f[307]" "f[308]" "f[309]" "f[310]" "f[311]" "f[312]" "f[313]" "f[314]" "f[315]" "f[316]" "f[317]" "f[318]" "f[319]";
+createNode groupId -n "groupId36";
+	rename -uid "67DB9218-4C83-6FF1-75F8-DCA36323F25B";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts31";
+	rename -uid "85C4CD94-4C4F-8FC6-61BE-7F8A79274E79";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 140 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]" "f[116]" "f[117]" "f[118]" "f[119]" "f[120]" "f[121]" "f[122]" "f[123]" "f[124]" "f[125]" "f[126]" "f[127]" "f[128]" "f[129]" "f[130]" "f[131]" "f[132]" "f[133]" "f[134]" "f[135]" "f[136]" "f[137]" "f[138]" "f[139]";
+createNode groupId -n "groupId37";
+	rename -uid "A803B599-4D20-6A72-27E7-049701261A4E";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts32";
+	rename -uid "229DCB0F-4D56-68BB-A993-2AA1296865C6";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 60 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]";
+createNode groupId -n "groupId38";
+	rename -uid "3214AEA1-4CB8-AE82-7A20-9CBCF0D85C6A";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts33";
+	rename -uid "3537347D-4EE3-F68A-95AA-A0A8C209CD59";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 152 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]" "f[116]" "f[117]" "f[118]" "f[119]" "f[120]" "f[121]" "f[122]" "f[123]" "f[124]" "f[125]" "f[126]" "f[127]" "f[128]" "f[129]" "f[130]" "f[131]" "f[132]" "f[133]" "f[134]" "f[135]" "f[136]" "f[137]" "f[138]" "f[139]" "f[140]" "f[141]" "f[142]" "f[143]" "f[144]" "f[145]" "f[146]" "f[147]" "f[148]" "f[149]" "f[150]" "f[151]";
+createNode groupId -n "groupId39";
+	rename -uid "5FF8147A-4FA9-73E6-5589-518FCF2A08C7";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts34";
+	rename -uid "1B93DA13-45F6-3406-BC13-ACBDFE469EDA";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 60 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]";
+createNode groupId -n "groupId40";
+	rename -uid "B2F6DFBC-49A5-08BE-FDAA-0194CE11CC8F";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts35";
+	rename -uid "12163CB0-4BA9-879A-4814-52A40DDDD2AF";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 320 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]" "f[116]" "f[117]" "f[118]" "f[119]" "f[120]" "f[121]" "f[122]" "f[123]" "f[124]" "f[125]" "f[126]" "f[127]" "f[128]" "f[129]" "f[130]" "f[131]" "f[132]" "f[133]" "f[134]" "f[135]" "f[136]" "f[137]" "f[138]" "f[139]" "f[140]" "f[141]" "f[142]" "f[143]" "f[144]" "f[145]" "f[146]" "f[147]" "f[148]" "f[149]" "f[150]" "f[151]" "f[152]" "f[153]" "f[154]" "f[155]" "f[156]" "f[157]" "f[158]" "f[159]" "f[160]" "f[161]" "f[162]" "f[163]" "f[164]" "f[165]" "f[166]" "f[167]" "f[168]" "f[169]" "f[170]" "f[171]" "f[172]" "f[173]" "f[174]" "f[175]" "f[176]" "f[177]" "f[178]" "f[179]" "f[180]" "f[181]" "f[182]" "f[183]" "f[184]" "f[185]" "f[186]" "f[187]" "f[188]" "f[189]" "f[190]" "f[191]" "f[192]" "f[193]" "f[194]" "f[195]" "f[196]" "f[197]" "f[198]" "f[199]" "f[200]" "f[201]" "f[202]" "f[203]" "f[204]" "f[205]" "f[206]" "f[207]" "f[208]" "f[209]" "f[210]" "f[211]" "f[212]" "f[213]" "f[214]" "f[215]" "f[216]" "f[217]" "f[218]" "f[219]" "f[220]" "f[221]" "f[222]" "f[223]" "f[224]" "f[225]" "f[226]" "f[227]" "f[228]" "f[229]" "f[230]" "f[231]" "f[232]" "f[233]" "f[234]" "f[235]" "f[236]" "f[237]" "f[238]" "f[239]" "f[240]" "f[241]" "f[242]" "f[243]" "f[244]" "f[245]" "f[246]" "f[247]" "f[248]" "f[249]" "f[250]" "f[251]" "f[252]" "f[253]" "f[254]" "f[255]" "f[256]" "f[257]" "f[258]" "f[259]" "f[260]" "f[261]" "f[262]" "f[263]" "f[264]" "f[265]" "f[266]" "f[267]" "f[268]" "f[269]" "f[270]" "f[271]" "f[272]" "f[273]" "f[274]" "f[275]" "f[276]" "f[277]" "f[278]" "f[279]" "f[280]" "f[281]" "f[282]" "f[283]" "f[284]" "f[285]" "f[286]" "f[287]" "f[288]" "f[289]" "f[290]" "f[291]" "f[292]" "f[293]" "f[294]" "f[295]" "f[296]" "f[297]" "f[298]" "f[299]" "f[300]" "f[301]" "f[302]" "f[303]" "f[304]" "f[305]" "f[306]" "f[307]" "f[308]" "f[309]" "f[310]" "f[311]" "f[312]" "f[313]" "f[314]" "f[315]" "f[316]" "f[317]" "f[318]" "f[319]";
+createNode groupId -n "groupId41";
+	rename -uid "687EB78A-4683-4C4C-6D15-61B7D2327326";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts36";
+	rename -uid "E4523388-41ED-FCB3-C336-E796C3670084";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 220 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]" "f[116]" "f[117]" "f[118]" "f[119]" "f[120]" "f[121]" "f[122]" "f[123]" "f[124]" "f[125]" "f[126]" "f[127]" "f[128]" "f[129]" "f[130]" "f[131]" "f[132]" "f[133]" "f[134]" "f[135]" "f[136]" "f[137]" "f[138]" "f[139]" "f[140]" "f[141]" "f[142]" "f[143]" "f[144]" "f[145]" "f[146]" "f[147]" "f[148]" "f[149]" "f[150]" "f[151]" "f[152]" "f[153]" "f[154]" "f[155]" "f[156]" "f[157]" "f[158]" "f[159]" "f[160]" "f[161]" "f[162]" "f[163]" "f[164]" "f[165]" "f[166]" "f[167]" "f[168]" "f[169]" "f[170]" "f[171]" "f[172]" "f[173]" "f[174]" "f[175]" "f[176]" "f[177]" "f[178]" "f[179]" "f[180]" "f[181]" "f[182]" "f[183]" "f[184]" "f[185]" "f[186]" "f[187]" "f[188]" "f[189]" "f[190]" "f[191]" "f[192]" "f[193]" "f[194]" "f[195]" "f[196]" "f[197]" "f[198]" "f[199]" "f[200]" "f[201]" "f[202]" "f[203]" "f[204]" "f[205]" "f[206]" "f[207]" "f[208]" "f[209]" "f[210]" "f[211]" "f[212]" "f[213]" "f[214]" "f[215]" "f[216]" "f[217]" "f[218]" "f[219]";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -5951,9 +7201,9 @@ select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 246 ".dsm";
+	setAttr -s 299 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 44 ".gn";
+	setAttr -s 102 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -6061,6 +7311,117 @@ connectAttr "Potted_Plant:groupId3.id" "Potted_PlantRN.phl[84]";
 connectAttr "Scroll_copyRN.phl[1]" "Scrol_group_2Shape.iog.og[1].gco";
 connectAttr "groupId2.msg" "Scroll_copyRN.phl[2]";
 connectAttr "Scrol_group_2Shape.iog.og[1]" "Scroll_copyRN.phl[3]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[1]" ":initialShadingGroup.dsm" -na;
+connectAttr "Tavern_Counter_and_Barrel:groupId36.id" "Tavern_Counter_and_BarrelRN.phl[2]"
+		;
+connectAttr ":initialShadingGroup.mwc" "Tavern_Counter_and_BarrelRN.phl[3]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[4]" "polyUnite6.ip[8]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[5]" "polyUnite6.im[8]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[6]" ":initialShadingGroup.dsm" -na;
+connectAttr "Tavern_Counter_and_Barrel:groupId37.id" "Tavern_Counter_and_BarrelRN.phl[7]"
+		;
+connectAttr "Tavern_Counter_and_BarrelRN.phl[8]" ":initialShadingGroup.dsm" -na;
+connectAttr "Tavern_Counter_and_Barrel:groupId26.id" "Tavern_Counter_and_BarrelRN.phl[9]"
+		;
+connectAttr ":initialShadingGroup.mwc" "Tavern_Counter_and_BarrelRN.phl[10]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[11]" "polyUnite6.ip[2]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[12]" "polyUnite6.im[2]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[13]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId27.id" "Tavern_Counter_and_BarrelRN.phl[14]"
+		;
+connectAttr "Tavern_Counter_and_BarrelRN.phl[15]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId34.id" "Tavern_Counter_and_BarrelRN.phl[16]"
+		;
+connectAttr ":initialShadingGroup.mwc" "Tavern_Counter_and_BarrelRN.phl[17]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[18]" "polyUnite6.ip[7]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[19]" "polyUnite6.im[7]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[20]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId35.id" "Tavern_Counter_and_BarrelRN.phl[21]"
+		;
+connectAttr "Tavern_Counter_and_BarrelRN.phl[22]" "polyUnite6.ip[5]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[23]" "polyUnite6.im[5]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[24]" "polyUnite6.ip[0]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[25]" "polyUnite6.im[0]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[26]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId24.id" "Tavern_Counter_and_BarrelRN.phl[27]"
+		;
+connectAttr ":initialShadingGroup.mwc" "Tavern_Counter_and_BarrelRN.phl[28]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[29]" "polyUnite6.ip[1]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[30]" "polyUnite6.im[1]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[31]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId25.id" "Tavern_Counter_and_BarrelRN.phl[32]"
+		;
+connectAttr "Tavern_Counter_and_BarrelRN.phl[33]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId32.id" "Tavern_Counter_and_BarrelRN.phl[34]"
+		;
+connectAttr ":initialShadingGroup.mwc" "Tavern_Counter_and_BarrelRN.phl[35]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[36]" "polyUnite6.ip[6]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[37]" "polyUnite6.im[6]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[38]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId33.id" "Tavern_Counter_and_BarrelRN.phl[39]"
+		;
+connectAttr "Tavern_Counter_and_BarrelRN.phl[40]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId30.id" "Tavern_Counter_and_BarrelRN.phl[41]"
+		;
+connectAttr ":initialShadingGroup.mwc" "Tavern_Counter_and_BarrelRN.phl[42]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[43]" "polyUnite6.ip[4]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[44]" "polyUnite6.im[4]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[45]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId31.id" "Tavern_Counter_and_BarrelRN.phl[46]"
+		;
+connectAttr "Tavern_Counter_and_BarrelRN.phl[47]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId28.id" "Tavern_Counter_and_BarrelRN.phl[48]"
+		;
+connectAttr ":initialShadingGroup.mwc" "Tavern_Counter_and_BarrelRN.phl[49]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[50]" "polyUnite6.ip[3]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[51]" "polyUnite6.im[3]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[52]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId29.id" "Tavern_Counter_and_BarrelRN.phl[53]"
+		;
+connectAttr "Tavern_Counter_and_BarrelRN.phl[54]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId20.id" "Tavern_Counter_and_BarrelRN.phl[55]"
+		;
+connectAttr ":initialShadingGroup.mwc" "Tavern_Counter_and_BarrelRN.phl[56]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[57]" "polyUnite2.ip[2]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[58]" "polyUnite2.im[2]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[59]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId21.id" "Tavern_Counter_and_BarrelRN.phl[60]"
+		;
+connectAttr "Tavern_Counter_and_BarrelRN.phl[61]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId16.id" "Tavern_Counter_and_BarrelRN.phl[62]"
+		;
+connectAttr ":initialShadingGroup.mwc" "Tavern_Counter_and_BarrelRN.phl[63]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[64]" "polyUnite2.ip[0]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[65]" "polyUnite2.im[0]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[66]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId17.id" "Tavern_Counter_and_BarrelRN.phl[67]"
+		;
+connectAttr "Tavern_Counter_and_BarrelRN.phl[68]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId18.id" "Tavern_Counter_and_BarrelRN.phl[69]"
+		;
+connectAttr ":initialShadingGroup.mwc" "Tavern_Counter_and_BarrelRN.phl[70]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[71]" "polyUnite2.ip[1]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[72]" "polyUnite2.im[1]";
+connectAttr "Tavern_Counter_and_BarrelRN.phl[73]" ":initialShadingGroup.dsm" -na
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId19.id" "Tavern_Counter_and_BarrelRN.phl[74]"
+		;
 connectAttr "polyTweakUV12.out" "FloorShape.i";
 connectAttr "polyTweakUV12.uvtk[0]" "FloorShape.uvst[0].uvtw";
 connectAttr "polyTweakUV7.out" "WallShape3.i";
@@ -6073,6 +7434,133 @@ connectAttr "Potted_Plant:groupId27.id" "Potted_Plant:leaf2Shape.ciog.cog[0].cgi
 connectAttr "groupId1.id" "Scrol_group_2Shape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "Scrol_group_2Shape.iog.og[0].gco";
 connectAttr "groupId2.id" "Scrol_group_2Shape.iog.og[1].gid";
+connectAttr "groupParts1.og" "polySurfaceShape3.i";
+connectAttr "groupId3.id" "polySurfaceShape3.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape3.iog.og[0].gco";
+connectAttr "groupParts2.og" "polySurfaceShape4.i";
+connectAttr "groupId4.id" "polySurfaceShape4.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape4.iog.og[0].gco";
+connectAttr "groupParts3.og" "polySurfaceShape5.i";
+connectAttr "groupId5.id" "polySurfaceShape5.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape5.iog.og[0].gco";
+connectAttr "groupParts4.og" "polySurfaceShape6.i";
+connectAttr "groupId6.id" "polySurfaceShape6.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape6.iog.og[0].gco";
+connectAttr "groupParts5.og" "polySurfaceShape7.i";
+connectAttr "groupId7.id" "polySurfaceShape7.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape7.iog.og[0].gco";
+connectAttr "groupParts6.og" "polySurfaceShape8.i";
+connectAttr "groupId8.id" "polySurfaceShape8.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape8.iog.og[0].gco";
+connectAttr "groupParts7.og" "polySurfaceShape9.i";
+connectAttr "groupId9.id" "polySurfaceShape9.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape9.iog.og[0].gco";
+connectAttr "groupParts8.og" "polySurfaceShape10.i";
+connectAttr "groupId10.id" "polySurfaceShape10.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape10.iog.og[0].gco";
+connectAttr "groupParts9.og" "polySurfaceShape11.i";
+connectAttr "groupId11.id" "polySurfaceShape11.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape11.iog.og[0].gco";
+connectAttr "groupParts10.og" "polySurfaceShape12.i";
+connectAttr "groupId12.id" "polySurfaceShape12.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape12.iog.og[0].gco";
+connectAttr "groupParts11.og" "polySurfaceShape13.i";
+connectAttr "groupId13.id" "polySurfaceShape13.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape13.iog.og[0].gco";
+connectAttr "groupParts12.og" "polySurfaceShape14.i";
+connectAttr "groupId14.id" "polySurfaceShape14.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape14.iog.og[0].gco";
+connectAttr "groupParts13.og" "polySurfaceShape15.i";
+connectAttr "groupId15.id" "polySurfaceShape15.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape15.iog.og[0].gco";
+connectAttr "groupParts14.og" "polySurfaceShape16.i";
+connectAttr "groupId16.id" "polySurfaceShape16.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape16.iog.og[0].gco";
+connectAttr "groupParts15.og" "polySurfaceShape17.i";
+connectAttr "groupId17.id" "polySurfaceShape17.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape17.iog.og[0].gco";
+connectAttr "groupParts16.og" "polySurfaceShape18.i";
+connectAttr "groupId18.id" "polySurfaceShape18.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape18.iog.og[0].gco";
+connectAttr "groupParts17.og" "polySurfaceShape19.i";
+connectAttr "groupId19.id" "polySurfaceShape19.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape19.iog.og[0].gco";
+connectAttr "groupParts18.og" "polySurfaceShape20.i";
+connectAttr "groupId20.id" "polySurfaceShape20.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape20.iog.og[0].gco";
+connectAttr "groupParts19.og" "polySurfaceShape21.i";
+connectAttr "groupId21.id" "polySurfaceShape21.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape21.iog.og[0].gco";
+connectAttr "groupParts20.og" "polySurfaceShape22.i";
+connectAttr "groupId22.id" "polySurfaceShape22.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape22.iog.og[0].gco";
+connectAttr "groupParts21.og" "polySurfaceShape23.i";
+connectAttr "groupId23.id" "polySurfaceShape23.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape23.iog.og[0].gco";
+connectAttr "groupParts22.og" "polySurfaceShape24.i";
+connectAttr "groupId24.id" "polySurfaceShape24.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape24.iog.og[0].gco";
+connectAttr "groupParts23.og" "polySurfaceShape25.i";
+connectAttr "groupId25.id" "polySurfaceShape25.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape25.iog.og[0].gco";
+connectAttr "groupParts24.og" "polySurfaceShape26.i";
+connectAttr "groupId26.id" "polySurfaceShape26.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape26.iog.og[0].gco";
+connectAttr "Tavern_Counter_and_Barrel:groupParts1.og" "|Tavern_Counter_and_Barrel:Counter_Base1|transform1|Tavern_Counter_and_Barrel:Counter_Base1Shape.i"
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId22.id" "|Tavern_Counter_and_Barrel:Counter_Base1|transform1|Tavern_Counter_and_Barrel:Counter_Base1Shape.iog.og[0].gid"
+		;
+connectAttr ":initialShadingGroup.mwc" "|Tavern_Counter_and_Barrel:Counter_Base1|transform1|Tavern_Counter_and_Barrel:Counter_Base1Shape.iog.og[0].gco"
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId23.id" "|Tavern_Counter_and_Barrel:Counter_Base1|transform1|Tavern_Counter_and_Barrel:Counter_Base1Shape.ciog.cog[0].cgid"
+		;
+connectAttr "groupParts25.og" "polySurface1Shape.i";
+connectAttr "groupId27.id" "polySurface1Shape.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurface1Shape.iog.og[0].gco";
+connectAttr "groupId28.id" "polySurface1Shape.ciog.cog[0].cgid";
+connectAttr "groupParts26.og" "polySurface24Shape.i";
+connectAttr "groupId29.id" "polySurface24Shape.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurface24Shape.iog.og[0].gco";
+connectAttr "groupId30.id" "polySurface24Shape.ciog.cog[0].cgid";
+connectAttr "groupParts27.og" "polySurface7Shape.i";
+connectAttr "groupId31.id" "polySurface7Shape.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurface7Shape.iog.og[0].gco";
+connectAttr "groupId32.id" "polySurface7Shape.ciog.cog[0].cgid";
+connectAttr "groupParts28.og" "polySurfaceShape27.i";
+connectAttr "groupId33.id" "polySurfaceShape27.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape27.iog.og[0].gco";
+connectAttr "groupParts29.og" "polySurfaceShape28.i";
+connectAttr "groupId34.id" "polySurfaceShape28.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape28.iog.og[0].gco";
+connectAttr "groupParts30.og" "polySurfaceShape29.i";
+connectAttr "groupId35.id" "polySurfaceShape29.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape29.iog.og[0].gco";
+connectAttr "groupParts31.og" "polySurfaceShape30.i";
+connectAttr "groupId36.id" "polySurfaceShape30.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape30.iog.og[0].gco";
+connectAttr "groupParts32.og" "polySurfaceShape31.i";
+connectAttr "groupId37.id" "polySurfaceShape31.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape31.iog.og[0].gco";
+connectAttr "groupParts33.og" "polySurfaceShape32.i";
+connectAttr "groupId38.id" "polySurfaceShape32.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape32.iog.og[0].gco";
+connectAttr "groupParts34.og" "polySurfaceShape33.i";
+connectAttr "groupId39.id" "polySurfaceShape33.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape33.iog.og[0].gco";
+connectAttr "groupParts35.og" "polySurfaceShape34.i";
+connectAttr "groupId40.id" "polySurfaceShape34.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape34.iog.og[0].gco";
+connectAttr "groupParts36.og" "polySurfaceShape35.i";
+connectAttr "groupId41.id" "polySurfaceShape35.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape35.iog.og[0].gco";
+connectAttr "Tavern_Counter_and_Barrel:groupParts2.og" "|Tavern_Counter_and_Barrel:Barrel_Stand|transform8|Tavern_Counter_and_Barrel:Barrel_StandShape.i"
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId38.id" "|Tavern_Counter_and_Barrel:Barrel_Stand|transform8|Tavern_Counter_and_Barrel:Barrel_StandShape.iog.og[0].gid"
+		;
+connectAttr ":initialShadingGroup.mwc" "|Tavern_Counter_and_Barrel:Barrel_Stand|transform8|Tavern_Counter_and_Barrel:Barrel_StandShape.iog.og[0].gco"
+		;
+connectAttr "Tavern_Counter_and_Barrel:groupId39.id" "|Tavern_Counter_and_Barrel:Barrel_Stand|transform8|Tavern_Counter_and_Barrel:Barrel_StandShape.ciog.cog[0].cgid"
+		;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -6128,6 +7616,102 @@ connectAttr "polyMapSewMove13.out" "polyTweakUV11.ip";
 connectAttr "polyTweakUV11.out" "polyMapSewMove14.ip";
 connectAttr "polyMapSewMove14.out" "polyMapSewMove15.ip";
 connectAttr "polyMapSewMove15.out" "polyTweakUV12.ip";
+connectAttr "Tavern_Counter_and_BarrelRNfosterParent1.msg" "Tavern_Counter_and_BarrelRN.fp"
+		;
+connectAttr "polyUnite2.out" "Tavern_Counter_and_Barrel:groupParts1.ig";
+connectAttr "Tavern_Counter_and_Barrel:groupId22.id" "Tavern_Counter_and_Barrel:groupParts1.gi"
+		;
+connectAttr "|Tavern_Counter_and_Barrel:Counter_Base1|transform1|Tavern_Counter_and_Barrel:Counter_Base1Shape.o" "polySeparate1.ip"
+		;
+connectAttr "polySeparate1.out[0]" "groupParts1.ig";
+connectAttr "groupId3.id" "groupParts1.gi";
+connectAttr "polySeparate1.out[1]" "groupParts2.ig";
+connectAttr "groupId4.id" "groupParts2.gi";
+connectAttr "polySeparate1.out[2]" "groupParts3.ig";
+connectAttr "groupId5.id" "groupParts3.gi";
+connectAttr "polySeparate1.out[3]" "groupParts4.ig";
+connectAttr "groupId6.id" "groupParts4.gi";
+connectAttr "polySeparate1.out[4]" "groupParts5.ig";
+connectAttr "groupId7.id" "groupParts5.gi";
+connectAttr "polySeparate1.out[5]" "groupParts6.ig";
+connectAttr "groupId8.id" "groupParts6.gi";
+connectAttr "polySeparate1.out[6]" "groupParts7.ig";
+connectAttr "groupId9.id" "groupParts7.gi";
+connectAttr "polySeparate1.out[7]" "groupParts8.ig";
+connectAttr "groupId10.id" "groupParts8.gi";
+connectAttr "polySeparate1.out[8]" "groupParts9.ig";
+connectAttr "groupId11.id" "groupParts9.gi";
+connectAttr "polySeparate1.out[9]" "groupParts10.ig";
+connectAttr "groupId12.id" "groupParts10.gi";
+connectAttr "polySeparate1.out[10]" "groupParts11.ig";
+connectAttr "groupId13.id" "groupParts11.gi";
+connectAttr "polySeparate1.out[11]" "groupParts12.ig";
+connectAttr "groupId14.id" "groupParts12.gi";
+connectAttr "polySeparate1.out[12]" "groupParts13.ig";
+connectAttr "groupId15.id" "groupParts13.gi";
+connectAttr "polySeparate1.out[13]" "groupParts14.ig";
+connectAttr "groupId16.id" "groupParts14.gi";
+connectAttr "polySeparate1.out[14]" "groupParts15.ig";
+connectAttr "groupId17.id" "groupParts15.gi";
+connectAttr "polySeparate1.out[15]" "groupParts16.ig";
+connectAttr "groupId18.id" "groupParts16.gi";
+connectAttr "polySeparate1.out[16]" "groupParts17.ig";
+connectAttr "groupId19.id" "groupParts17.gi";
+connectAttr "polySeparate1.out[17]" "groupParts18.ig";
+connectAttr "groupId20.id" "groupParts18.gi";
+connectAttr "polySeparate1.out[18]" "groupParts19.ig";
+connectAttr "groupId21.id" "groupParts19.gi";
+connectAttr "polySeparate1.out[19]" "groupParts20.ig";
+connectAttr "groupId22.id" "groupParts20.gi";
+connectAttr "polySeparate1.out[20]" "groupParts21.ig";
+connectAttr "groupId23.id" "groupParts21.gi";
+connectAttr "polySeparate1.out[21]" "groupParts22.ig";
+connectAttr "groupId24.id" "groupParts22.gi";
+connectAttr "polySeparate1.out[22]" "groupParts23.ig";
+connectAttr "groupId25.id" "groupParts23.gi";
+connectAttr "polySeparate1.out[23]" "groupParts24.ig";
+connectAttr "groupId26.id" "groupParts24.gi";
+connectAttr "polySurfaceShape3.o" "polyUnite3.ip[0]";
+connectAttr "polySurfaceShape4.o" "polyUnite3.ip[1]";
+connectAttr "polySurfaceShape3.wm" "polyUnite3.im[0]";
+connectAttr "polySurfaceShape4.wm" "polyUnite3.im[1]";
+connectAttr "polyUnite3.out" "groupParts25.ig";
+connectAttr "groupId27.id" "groupParts25.gi";
+connectAttr "polySurfaceShape26.o" "polyUnite4.ip[0]";
+connectAttr "polySurfaceShape25.o" "polyUnite4.ip[1]";
+connectAttr "polySurfaceShape26.wm" "polyUnite4.im[0]";
+connectAttr "polySurfaceShape25.wm" "polyUnite4.im[1]";
+connectAttr "polyUnite4.out" "groupParts26.ig";
+connectAttr "groupId29.id" "groupParts26.gi";
+connectAttr "polySurfaceShape9.o" "polyUnite5.ip[0]";
+connectAttr "polySurfaceShape5.o" "polyUnite5.ip[1]";
+connectAttr "polySurfaceShape9.wm" "polyUnite5.im[0]";
+connectAttr "polySurfaceShape5.wm" "polyUnite5.im[1]";
+connectAttr "polyUnite5.out" "groupParts27.ig";
+connectAttr "groupId31.id" "groupParts27.gi";
+connectAttr "polyUnite6.out" "Tavern_Counter_and_Barrel:groupParts2.ig";
+connectAttr "Tavern_Counter_and_Barrel:groupId38.id" "Tavern_Counter_and_Barrel:groupParts2.gi"
+		;
+connectAttr "|Tavern_Counter_and_Barrel:Barrel_Stand|transform8|Tavern_Counter_and_Barrel:Barrel_StandShape.o" "polySeparate2.ip"
+		;
+connectAttr "polySeparate2.out[0]" "groupParts28.ig";
+connectAttr "groupId33.id" "groupParts28.gi";
+connectAttr "polySeparate2.out[1]" "groupParts29.ig";
+connectAttr "groupId34.id" "groupParts29.gi";
+connectAttr "polySeparate2.out[2]" "groupParts30.ig";
+connectAttr "groupId35.id" "groupParts30.gi";
+connectAttr "polySeparate2.out[3]" "groupParts31.ig";
+connectAttr "groupId36.id" "groupParts31.gi";
+connectAttr "polySeparate2.out[4]" "groupParts32.ig";
+connectAttr "groupId37.id" "groupParts32.gi";
+connectAttr "polySeparate2.out[5]" "groupParts33.ig";
+connectAttr "groupId38.id" "groupParts33.gi";
+connectAttr "polySeparate2.out[6]" "groupParts34.ig";
+connectAttr "groupId39.id" "groupParts34.gi";
+connectAttr "polySeparate2.out[7]" "groupParts35.ig";
+connectAttr "groupId40.id" "groupParts35.gi";
+connectAttr "polySeparate2.out[8]" "groupParts36.ig";
+connectAttr "groupId41.id" "groupParts36.gi";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "FloorShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "WallShape3.iog" ":initialShadingGroup.dsm" -na;
@@ -6136,6 +7720,53 @@ connectAttr "Potted_Plant:leaf2Shape.ciog.cog[0]" ":initialShadingGroup.dsm" -na
 		;
 connectAttr "Scrol_group_2Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "WallShape4.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "|Tavern_Counter_and_Barrel:Counter_Base1|transform1|Tavern_Counter_and_Barrel:Counter_Base1Shape.iog.og[0]" ":initialShadingGroup.dsm"
+		 -na;
+connectAttr "|Tavern_Counter_and_Barrel:Counter_Base1|transform1|Tavern_Counter_and_Barrel:Counter_Base1Shape.ciog.cog[0]" ":initialShadingGroup.dsm"
+		 -na;
+connectAttr "polySurfaceShape3.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape4.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape5.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape6.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape7.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape8.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape9.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape10.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape11.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape12.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape13.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape14.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape15.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape16.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape17.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape18.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape19.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape20.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape21.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape22.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape23.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape24.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape25.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape26.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurface1Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurface1Shape.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurface24Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurface24Shape.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurface7Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurface7Shape.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "|Tavern_Counter_and_Barrel:Barrel_Stand|transform8|Tavern_Counter_and_Barrel:Barrel_StandShape.iog.og[0]" ":initialShadingGroup.dsm"
+		 -na;
+connectAttr "|Tavern_Counter_and_Barrel:Barrel_Stand|transform8|Tavern_Counter_and_Barrel:Barrel_StandShape.ciog.cog[0]" ":initialShadingGroup.dsm"
+		 -na;
+connectAttr "polySurfaceShape27.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape28.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape29.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape30.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape31.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape32.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape33.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape34.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape35.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "Potted_Plant:groupId2.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Potted_Plant:groupId3.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Potted_Plant:groupId4.msg" ":initialShadingGroup.gn" -na;
@@ -6162,4 +7793,84 @@ connectAttr "Potted_Plant:groupId24.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Potted_Plant:groupId25.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Potted_Plant:groupId26.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId1.msg" ":initialShadingGroup.gn" -na;
+connectAttr "Tavern_Counter_and_Barrel:groupId16.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId17.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId18.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId19.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId20.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId21.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId22.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "groupId3.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId4.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId5.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId6.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId7.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId8.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId9.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId10.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId11.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId12.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId13.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId14.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId15.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId16.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId17.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId18.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId19.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId20.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId21.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId22.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId23.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId24.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId25.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId26.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId27.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId29.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId31.msg" ":initialShadingGroup.gn" -na;
+connectAttr "Tavern_Counter_and_Barrel:groupId24.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId25.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId26.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId27.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId28.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId29.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId30.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId31.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId32.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId33.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId34.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId35.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId36.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId37.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "Tavern_Counter_and_Barrel:groupId38.msg" ":initialShadingGroup.gn" 
+		-na;
+connectAttr "groupId33.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId34.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId35.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId36.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId37.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId38.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId39.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId40.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId41.msg" ":initialShadingGroup.gn" -na;
 // End of Room_Scene_KSmith.ma
