@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Room_Scene_KSmith.ma
-//Last modified: Mon, Mar 16, 2026 02:11:31 PM
+//Last modified: Thu, Mar 19, 2026 11:52:17 PM
 //Codeset: 1252
 file -rdi 1 -ns "Tavern_Counter_and_Barrel" -rfn "Tavern_Counter_and_BarrelRN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tavern_Counter_and_Barrel.ma";
@@ -25,8 +25,6 @@ file -rdi 1 -ns "Short_Stool6" -rfn "Short_StoolRN6" -op "v=0;" -typ "mayaAscii"
 file -rdi 1 -ns "Scroll_Pile" -rfn "Scroll_PileRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Scroll_Pile.ma";
 file -rdi 1 -ns "Scroll" -rfn "ScrollRN" -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Scroll.ma";
-file -rdi 1 -ns "Bookshelf_Filled_With_Books2" -rfn "Bookshelf_Filled_With_Books2RN"
-		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Bookshelf_Filled_With_Books2.ma";
 file -rdi 1 -ns "Leafy_potted_plant" -rfn "Leafy_potted_plantRN" -op "v=0;"
 		 -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//scenes/Leafy_potted_plant.ma";
 file -rdi 1 -ns "Tall_Stool" -rfn "Tall_Stool_UV_Finished_CopyRN" -op "v=0;"
@@ -36,6 +34,8 @@ file -rdi 1 -ns "Tall_Stool2" -rfn "Tall_StoolRN1" -typ "mayaAscii" "C:/Github/D
 file -rdi 1 -ns "Tall_Stool3" -rfn "Tall_StoolRN2" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tall_Stool_UV_Finished_Copy.ma";
 file -rdi 1 -ns "Tall_Stool4" -rfn "Tall_StoolRN3" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tall_Stool_UV_Finished_Copy.ma";
 file -rdi 1 -ns "Tall_Stool5" -rfn "Tall_StoolRN4" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tall_Stool_UV_Finished_Copy.ma";
+file -rdi 1 -ns "Bookshelf_Filled_With_Books2_copy" -rfn "Bookshelf_Filled_With_Books2_copyRN"
+		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Bookshelf_Filled_With_Books2_copy.ma";
 file -r -ns "Tavern_Counter_and_Barrel" -dr 1 -rfn "Tavern_Counter_and_BarrelRN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tavern_Counter_and_Barrel.ma";
 file -r -ns "Bookshelf_Bottom_Cabinet" -dr 1 -rfn "Bookshelf_Bottom_CabinetRN" -op
@@ -58,8 +58,6 @@ file -r -ns "Short_Stool6" -dr 1 -rfn "Short_StoolRN6" -op "v=0;" -typ "mayaAsci
 file -r -ns "Scroll_Pile" -dr 1 -rfn "Scroll_PileRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Scroll_Pile.ma";
 file -r -ns "Scroll" -dr 1 -rfn "ScrollRN" -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Scroll.ma";
-file -r -ns "Bookshelf_Filled_With_Books2" -dr 1 -rfn "Bookshelf_Filled_With_Books2RN"
-		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Bookshelf_Filled_With_Books2.ma";
 file -r -ns "Leafy_potted_plant" -dr 1 -rfn "Leafy_potted_plantRN" -op "v=0;" -typ
 		 "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//scenes/Leafy_potted_plant.ma";
 file -r -ns "Tall_Stool" -dr 1 -rfn "Tall_Stool_UV_Finished_CopyRN" -op "v=0;" -typ
@@ -69,28 +67,29 @@ file -r -ns "Tall_Stool2" -dr 1 -rfn "Tall_StoolRN1" -typ "mayaAscii" "C:/Github
 file -r -ns "Tall_Stool3" -dr 1 -rfn "Tall_StoolRN2" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tall_Stool_UV_Finished_Copy.ma";
 file -r -ns "Tall_Stool4" -dr 1 -rfn "Tall_StoolRN3" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tall_Stool_UV_Finished_Copy.ma";
 file -r -ns "Tall_Stool5" -dr 1 -rfn "Tall_StoolRN4" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Tall_Stool_UV_Finished_Copy.ma";
+file -r -ns "Bookshelf_Filled_With_Books2_copy" -dr 1 -rfn "Bookshelf_Filled_With_Books2_copyRN"
+		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Bookshelf_Filled_With_Books2_copy.ma";
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
 		 "mtoa" "5.4.8.2";
-requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "52353C14-436B-8ADC-2F30-C7A25CDD51B2";
+fileInfo "UUID" "304622C4-42AF-65D4-4589-899C1204E654";
 createNode transform -s -n "persp";
 	rename -uid "F2D9500F-4E44-A00F-A358-0986417DAE1A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 35.429799776804614 17.861167002639924 35.843385054533655 ;
-	setAttr ".r" -type "double3" -18.33835272960982 42.600000000000826 0 ;
+	setAttr ".t" -type "double3" 18.498080073422756 8.5363195466491071 38.158277776933659 ;
+	setAttr ".r" -type "double3" -6.9383527296106049 27.000000000002366 2.2310124807733598e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2A689A2D-4CEE-EEDD-9F5C-C2A2A1A0CEF2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 54.137335385282597;
+	setAttr ".coi" 47.510841475408348;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -270,20 +269,20 @@ createNode transform -n "Short_Stools";
 createNode transform -n "Tall_Stools";
 	rename -uid "8EEF7EDB-4C1C-76F0-2A0D-68BCB36B5841";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "0F8AB30B-415E-8198-0CA3-1F857E700FFC";
+	rename -uid "6514DA54-48F4-C251-D159-27B03CB33F73";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "607A1A96-43DE-138F-AD80-0C8E308CF459";
+	rename -uid "46BBF7C3-4B9F-DDAC-D989-BA91D3D73752";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "0CEC15B1-4CE8-4F01-2007-C2B9C5E8D1E5";
+	rename -uid "278E652C-40C3-558B-3635-2C8A431F169B";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "E13C15C9-4B11-278D-F895-EB9460A267BF";
+	rename -uid "015EAFD3-4459-3870-2B9E-3CAD184A29AD";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "98882CE8-46B7-BBC8-C56A-34979D453E96";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "EDBD4500-411D-3CBA-D492-129F108975DB";
+	rename -uid "9872C8A5-411B-355B-8055-31BE91F2A2BE";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "A530D7D7-4810-62AC-46C8-58AD8B626E39";
 	setAttr ".g" yes;
@@ -308,17 +307,17 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 877\n            -height 256\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n"
 		+ "            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
 		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n"
-		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
+		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 877\n            -height 256\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
 		+ "            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n"
 		+ "            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n"
-		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
-		+ "            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
+		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 877\n            -height 256\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n"
+		+ "        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
 		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
-		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1762\n            -height 579\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1762\n            -height 457\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n"
 		+ "            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n"
 		+ "            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n"
@@ -345,8 +344,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n"
 		+ "                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n"
 		+ "            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1762\\n    -height 579\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1762\\n    -height 579\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1762\\n    -height 457\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1762\\n    -height 457\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -360,8 +359,16 @@ createNode reference -n "Tavern_Counter_and_BarrelRN";
 	rename -uid "2030AF4D-46F5-9180-3726-CFACB6A6317E";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Tavern_Counter_and_BarrelRN"
-		"Tavern_Counter_and_BarrelRN" 0
-		"Tavern_Counter_and_BarrelRN" 37
+		"Tavern_Counter_and_BarrelRN" 4
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_handle" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_handle" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		"Tavern_Counter_and_BarrelRN" 33
 		2 "|Tavern_Counter_and_Barrel:Tavern_Counter" "translate" " -type \"double3\" 4.81556151014625655 0.27235120509722427 -2.30569079829064405"
 		
 		2 "|Tavern_Counter_and_Barrel:Tavern_Counter" "rotate" " -type \"double3\" 0 90 0"
@@ -400,10 +407,6 @@ createNode reference -n "Tavern_Counter_and_BarrelRN";
 		
 		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel" "scalePivot" " -type \"double3\" 9.89355564117431641 4.12563955783843994 -19.78843021392822266"
 		
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_handle" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_handle" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_Base" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Spicket_Base" 
@@ -423,10 +426,6 @@ createNode reference -n "Tavern_Counter_and_BarrelRN";
 		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand" 
-		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Ring" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Tavern_Counter_and_Barrel:Spicket_Barrel|Tavern_Counter_and_Barrel:Barrel_Stand1" 
 		"rotate" " -type \"double3\" 0 0 0"
@@ -442,13 +441,19 @@ createNode reference -n "Bookshelf_Bottom_CabinetRN";
 	rename -uid "CC3D6C86-4079-BB61-1FF8-C6BEC04020DD";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Bookshelf_Bottom_CabinetRN"
-		"Bookshelf_Bottom_CabinetRN" 0
-		"Bookshelf_Bottom_CabinetRN" 3
+		"Bookshelf_Bottom_CabinetRN" 1
+		2 "|Bookshelf_Bottom_Cabinet:group1|Bookshelf_Bottom_Cabinet:pCylinder2" 
+		"translate" " -type \"double3\" -0.8114476589721864 -0.020708892821660108 -1.46267011696487259"
+		
+		"Bookshelf_Bottom_CabinetRN" 4
 		2 "|Bookshelf_Bottom_Cabinet:group1" "translate" " -type \"double3\" -13.92912540148278211 0 -1.50691496702316385"
 		
 		2 "|Bookshelf_Bottom_Cabinet:group1" "rotatePivot" " -type \"double3\" 14.76207494735717773 3.90759234130382538 -7.17158341407775879"
 		
-		2 "|Bookshelf_Bottom_Cabinet:group1" "scalePivot" " -type \"double3\" 14.76207494735717773 3.90759234130382538 -7.17158341407775879";
+		2 "|Bookshelf_Bottom_Cabinet:group1" "scalePivot" " -type \"double3\" 14.76207494735717773 3.90759234130382538 -7.17158341407775879"
+		
+		2 "|Bookshelf_Bottom_Cabinet:group1|Bookshelf_Bottom_Cabinet:pCylinder1" 
+		"translate" " -type \"double3\" -0.8114476589721864 -0.020708892821660108 -1.46267011696487259";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Long_TableRN";
@@ -564,290 +569,6 @@ createNode reference -n "ScrollRN";
 		2 "|Scroll:Scrol_group_2" "translate" " -type \"double3\" -4.2808607510276282 2.14166576001827247 1.52914631063664919";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
-createNode reference -n "Bookshelf_Filled_With_Books2RN";
-	rename -uid "B2E86E06-4634-D81E-6827-71B3F15A1DA7";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Bookshelf_Filled_With_Books2RN"
-		"Bookshelf_Filled_With_Books2RN" 0
-		"Bookshelf_Filled_With_Books2RN" 139
-		2 "|Bookshelf_Filled_With_Books2:Bookshelf_1" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Candle_group_3" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_63" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_64" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_65" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book67" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book66" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book69" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book68" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book70" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book71" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book72" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book74" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book73" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book75" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book76" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book78" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_77" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_77" "translateX" " -av"
-		2 "|Bookshelf_Filled_With_Books2:Book79" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book80" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book81" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book82" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book84" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book83" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book85" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book86" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book106" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book105" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book87" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book88" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book89" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book90" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book99" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book100" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book101" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book91" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book92" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book93" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book94" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book95" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book96" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book97" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book98" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book102" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book104" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book103" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book109" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book110" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book108" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book107" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book135" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book136" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book137" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book134" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book133" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book132" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book114" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book111" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book112" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book113" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book118" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book115" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book116" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book117" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book122" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book121" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book120" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book123" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book124" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book125" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book126" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book127" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book128" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book129" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book130" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book131" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book119" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book157" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book160" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book161" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book159" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book158" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book162" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book163" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book164" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book165" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book166" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book167" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book168" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book169" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book170" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book175" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book176" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book177" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book178" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book172" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book171" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book174" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book173" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book179" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book182" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book183" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book180" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book181" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book156" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book155" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book154" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book153" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book152" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book151" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book148" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book149" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book150" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book147" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book146" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book145" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book144" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book143" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book142" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_31" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_32" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_33" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_34" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_35" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_36" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_37" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Sack_39" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_38" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_40" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_41" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_42" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_43" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_44" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_45" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_46" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_66" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book_Stack_67" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652"
-		
-		2 "|Bookshelf_Filled_With_Books2:Book340" "translate" " -type \"double3\" -0.77223673226942502 0.017667981233040253 -1.51590173287847652";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode reference -n "Leafy_potted_plantRN";
 	rename -uid "ACF43492-40BF-E6BA-A399-B59843BC3077";
 	setAttr ".ed" -type "dataReferenceEdits" 
@@ -926,6 +647,259 @@ createNode reference -n "Tall_StoolRN4";
 		
 		2 "|Tall_Stool5:Tall_Stool_1" "rotatePivotTranslate" " -type \"double3\" 0 0 0";
 lockNode -l 1 ;
+createNode reference -n "Bookshelf_Filled_With_Books2_copyRN";
+	rename -uid "9C438E4C-4678-B2A0-B97A-D58F223F0989";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Bookshelf_Filled_With_Books2_copyRN"
+		"Bookshelf_Filled_With_Books2_copyRN" 0
+		"Bookshelf_Filled_With_Books2_copyRN" 123
+		2 "|Bookshelf_Filled_With_Books2_copy:Bookshelf_1" "translate" " -type \"double3\" -0.8114476589721864 -0.020708892821660108 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_80" "translate" " -type \"double3\" -0.81713256662117217 -0.020708892821660108 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_81" "translate" " -type \"double3\" -0.64673299658113415 -0.020708892821660108 -1.67837824376883038"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_82" "translate" " -type \"double3\" -0.48343212815886183 -0.020708892821660108 -1.67837824376883038"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_83" "translate" " -type \"double3\" -0.33434123578572983 -0.020708892821660108 -1.77105487667954442"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_84" "translate" " -type \"double3\" -0.17365757807033422 -0.020708892821660108 -1.77105487667954442"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_85" "translate" " -type \"double3\" -0.01493915876614782 -0.020708892821660108 -1.77105487667954442"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_86" "translate" " -type \"double3\" 0.14813361814627068 -0.020708892821660108 -1.77105487667954442"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book188" "translate" " -type \"double3\" -1.57389119597486626 -0.020708892821660108 -1.38078541400854071"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book189" "translate" " -type \"double3\" -1.36750511702729538 -0.020708892821660108 -1.38078541400854071"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book190" "translate" " -type \"double3\" -1.16007126291968277 -0.020708892821660108 -1.38078541400854071"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book191" "translate" " -type \"double3\" -0.94872775112571928 -0.020708892821660108 -1.38078541400854071"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book192" "translate" " -type \"double3\" -0.74200414254334657 -0.020708892821660108 -1.38078541400854071"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_87" "translate" " -type \"double3\" -0.89683784010003631 -0.020708892821660108 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book193" "translate" " -type \"double3\" 2.62067980731798666 1.46299552446503789 -1.61073684233921366"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book194" "translate" " -type \"double3\" -1.14581843533384964 0.0042039791152701511 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book195" "translate" " -type \"double3\" -1.0815786641911922 0.0042039791152701511 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book196" "translate" " -type \"double3\" -1.01545193782741094 0.0042039791152701511 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book197" "translate" " -type \"double3\" -0.95169314853685316 0.0042039791152701511 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book198" "translate" " -type \"double3\" -0.88469614630331206 0.0042039791152701511 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book199" "translate" " -type \"double3\" -0.75051047938895477 -0.0013590856402405649 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book200" "translate" " -type \"double3\" -0.68763152144523398 -0.0013590856402405649 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book201" "translate" " -type \"double3\" -0.62315499074300695 0.0048988429022189806 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book202" "translate" " -type \"double3\" -0.5591136353658317 0.0048988429022189806 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book203" "translate" " -type \"double3\" 0.65137484074055663 -0.020708892821660108 -1.06048293754820389"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book204" "translate" " -type \"double3\" -2.15796734410211766 -0.31927132619590548 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book205" "translate" " -type \"double3\" -2.15426166825918752 -0.1015193108943313 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book206" "translate" " -type \"double3\" -3.071818389827496 1.67842922127819971 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book207" "translate" " -type \"double3\" -3.15697736962983999 1.76305118145953621 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_88" "translate" " -type \"double3\" -4.01556997180290587 -1.51884689592471478 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_89" "translate" " -type \"double3\" -3.84446600124416982 -1.50914236928194168 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book208" "translate" " -type \"double3\" -3.18020066307770843 -1.53014357288698566 -1.35473188059088834"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book209" "translate" " -type \"double3\" -2.96812525304741026 -1.52739466767434084 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_90" "translate" " -type \"double3\" -3.11691903199742004 -1.50628728939730294 -1.47491795944153559"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book210" "translate" " -type \"double3\" -3.53062365429318437 -1.53456372256734497 -1.57253117140481624"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book211" "translate" " -type \"double3\" -3.2844829031542071 -0.052257158422816197 -1.37342488081864822"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book212" "translate" " -type \"double3\" -3.46421418995786734 -1.51598840835348891 -1.57253117140481624"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book213" "translate" " -type \"double3\" -3.39264260391238359 -1.51598840835348891 -1.57253117140481624"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book214" "translate" " -type \"double3\" -3.19527477341865929 -0.052257158422816197 -1.37342488081864822"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book215" "translate" " -type \"double3\" 0.64920034605744359 -1.52739466767434084 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book216" "translate" " -type \"double3\" 0.43234900751386784 -1.52739466767434084 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book217" "translate" " -type \"double3\" -0.77374701620997088 -1.50468511050665921 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book218" "translate" " -type \"double3\" -0.83892035236122053 -1.50211070728065099 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book219" "translate" " -type \"double3\" -0.90921434249449762 -1.50211070728065099 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_91" "translate" " -type \"double3\" 2.01568254309767703 -1.81212818508320161 -1.88400714505566569"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_92" "translate" " -type \"double3\" 2.01568254309767703 -1.65228679923651178 -1.88400714505566569"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book220" "translate" " -type \"double3\" -1.85623194913248435 -1.35915704659726178 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book221" "translate" " -type \"double3\" -1.80584897583386583 -1.41809211992424533 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book222" "translate" " -type \"double3\" -1.85623194913248435 -1.29509350165515791 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book223" "translate" " -type \"double3\" -0.89747074880930944 -1.30805311496521437 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_93" "translate" " -type \"double3\" -0.81713256662117217 -4.572488195492034 -1.66771423782322081"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_94" "translate" " -type \"double3\" -0.64673299658113415 -4.572488195492034 -1.67837824376883038"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_95" "translate" " -type \"double3\" 3.51166035147948641 -4.572488195492034 -1.67837824376883038"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book224" "translate" " -type \"double3\" -3.47001374311196997 -2.78872812121083768 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book225" "translate" " -type \"double3\" -2.4672980417413175 -4.6532986135647052 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book226" "translate" " -type \"double3\" -2.47100371758424764 -4.87105062886627938 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book227" "translate" " -type \"double3\" -3.38485476330962598 -2.87335008139217418 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book228" "translate" " -type \"double3\" -3.29905468348965503 -4.572488195492034 -1.25843893743750979"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book229" "translate" " -type \"double3\" -3.09266860454208414 -4.572488195492034 -1.25843893743750979"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book230" "translate" " -type \"double3\" -2.93937715177207393 -4.55313838831061446 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book231" "translate" " -type \"double3\" -2.87649819382835314 -4.55313838831061446 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book232" "translate" " -type \"double3\" -2.81202166312612611 -4.54688045976815491 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book233" "translate" " -type \"double3\" -2.74798030774895086 -4.54688045976815491 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book234" "translate" " -type \"double3\" -3.47001374311196997 -2.41323548284864042 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book235" "translate" " -type \"double3\" -3.38485476330962598 -2.49785744302997692 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book237" "translate" " -type \"double3\" -2.4672980417413175 -4.27780597520250705 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book240" "translate" " -type \"double3\" -2.44921327343260575 -4.62194124303385312 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book241" "translate" " -type \"double3\" -2.68006479746493032 -4.55313838831061446 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book242" "translate" " -type \"double3\" -2.35370766930902953 -4.62194124303385312 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book243" "translate" " -type \"double3\" -2.26649545516677486 -4.62194124303385312 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_96" "translate" " -type \"double3\" -0.034823216485377229 -4.58742687443055441 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_97" "translate" " -type \"double3\" -0.25033206134552088 -4.58742687443055441 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book244" "translate" " -type \"double3\" -3.65339253015453824 -3.08323326897103733 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book245" "translate" " -type \"double3\" -3.43654119161096272 -3.08323326897103733 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book246" "translate" " -type \"double3\" -3.21967941741734354 -3.08323326897103733 -1.32538686733527644"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book247" "translate" " -type \"double3\" -3.00282807887376801 -3.08323326897103733 -1.42795086099495983"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_98" "translate" " -type \"double3\" -3.11691903199742004 -3.08235458847217059 -1.47491795944153559"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_99" "translate" " -type \"double3\" -2.94249855585406461 -3.08235458847217059 -1.47491795944153559"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book249" "translate" " -type \"double3\" -2.8011567056925748 -3.12397748314965495 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_101" "translate" " -type \"double3\" 1.07075778653758658 -3.35566318430280131 -1.88400714505566569"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book250" "translate" " -type \"double3\" -2.8011567056925748 -3.06391833022650983 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book251" "translate" " -type \"double3\" -2.8011567056925748 -3.00281157025876899 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book252" "translate" " -type \"double3\" -2.8011567056925748 -2.93853659806240497 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book253" "translate" " -type \"double3\" -2.8011567056925748 -2.87957848675810624 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book254" "translate" " -type \"double3\" -2.8011567056925748 -2.82094102606138097 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_102" "translate" " -type \"double3\" 3.51286092755209278 -3.07289633657522732 -1.77105487667954442"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_103" "translate" " -type \"double3\" 3.19106973133548788 -3.07289633657522732 -1.77105487667954442"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_104" "translate" " -type \"double3\" 3.34978815063967428 -3.07289633657522732 -1.77105487667954442"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book255" "translate" " -type \"double3\" 0.11007327995196459 -3.06986959254350822 -1.26261757278449327"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book256" "translate" " -type \"double3\" -1.15856618558316748 -3.04883510940713709 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book257" "translate" " -type \"double3\" -1.0882721954498904 -3.04883510940713709 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book258" "translate" " -type \"double3\" -1.38361940948806117 -3.11828570555065987 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book259" "translate" " -type \"double3\" -1.47595590087416539 -3.11828570555065987 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book260" "translate" " -type \"double3\" -4.63541066949332681 -5.82868867257208034 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book261" "translate" " -type \"double3\" -4.57253171154960647 -5.82868867257208034 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book262" "translate" " -type \"double3\" -4.44401382547020418 -5.8224307440296208 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book263" "translate" " -type \"double3\" -4.37609831518618364 -5.82868867257208034 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book264" "translate" " -type \"double3\" -4.50805518084737944 -5.8224307440296208 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book265" "translate" " -type \"double3\" -4.30916510149102017 -5.82868867257208034 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book266" "translate" " -type \"double3\" -4.24628614354729983 -5.82868867257208034 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book267" "translate" " -type \"double3\" -4.11776825746789754 -5.8224307440296208 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book268" "translate" " -type \"double3\" -4.049852747183877 -5.82868867257208034 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book269" "translate" " -type \"double3\" -4.1818096128450728 -5.8224307440296208 -1.79239008183378168"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_105" "translate" " -type \"double3\" -3.34964390897801767 -5.85094668519606209 -1.54288386054390081"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_106" "translate" " -type \"double3\" -3.17933525934757544 -5.85094668519606209 -1.51024433097866329"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_107" "translate" " -type \"double3\" -3.02684708202027952 -5.85094668519606209 -1.55222169141783084"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book270" "translate" " -type \"double3\" -3.32305781862888772 -5.90419048333557139 -1.64916866937113848"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book271" "translate" " -type \"double3\" -3.22755221450531149 -5.90419048333557139 -1.64916866937113848"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book272" "translate" " -type \"double3\" -3.13396399226868638 -5.90419048333557139 -1.64916866937113848"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book273" "translate" " -type \"double3\" -3.03845838814511016 -5.90419048333557139 -1.64916866937113848"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book274" "translate" " -type \"double3\" -2.94609063629400669 -5.90419048333557139 -1.64916866937113848"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book275" "translate" " -type \"double3\" -2.73044519229104932 -5.94785648032985037 -1.64916866937113848"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book276" "translate" " -type \"double3\" -2.61315525927945735 -5.94785648032985037 -1.64916866937113848"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book277" "translate" " -type \"double3\" -1.24970084068461773 -6.04473049599994372 -1.41927961334500896"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book278" "translate" " -type \"double3\" -1.19819004116017203 -5.64980662002078748 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book279" "translate" " -type \"double3\" -1.14780706786155351 -5.70874169334777282 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_109" "translate" " -type \"double3\" 2.67372445106998935 -6.14041352362639525 -1.88400714505566569"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book281" "translate" " -type \"double3\" -1.19819004116017203 -5.58574307507868451 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book282" "translate" " -type \"double3\" -0.20174094605054727 -5.97728962780887585 -1.46267011696487259"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book283" "translate" " -type \"double3\" -1.14780706786155351 -5.52297206945739649 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book284" "translate" " -type \"double3\" -1.19819004116017203 -5.46403699613041116 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book285" "translate" " -type \"double3\" -1.19819004116017203 -5.39997345118830818 -1.67278225517794787"
+		
+		2 "|Bookshelf_Filled_With_Books2_copy:Book_110" "translate" " -type \"double3\" -0.0026034217377179925 -5.89782119530163662 -1.71849367187389745";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -944,14 +918,14 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
-	setAttr -s 17 ".r";
+	setAttr -s 19 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 252 ".dsm";
+	setAttr -s 234 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 47 ".gn";
+	setAttr -s 19 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
