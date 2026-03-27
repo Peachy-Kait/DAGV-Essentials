@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: Room_Scene_KSmith.ma
-//Last modified: Thu, Mar 26, 2026 05:11:17 PM
+//Name: Room_Scene_KSmith_copy.ma
+//Last modified: Thu, Mar 26, 2026 05:11:31 PM
 //Codeset: 1252
 file -rdi 1 -ns "Bookshelf_Bottom_Cabinet" -rfn "Bookshelf_Bottom_CabinetRN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Bookshelf_Bottom_Cabinet.ma";
@@ -91,18 +91,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "4D5AE959-464C-F93E-6E13-BA998AB25628";
+fileInfo "UUID" "689E1F28-44C6-6148-B63C-67A75EE51421";
 createNode transform -s -n "persp";
 	rename -uid "F2D9500F-4E44-A00F-A358-0986417DAE1A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -27.384075485057963 16.5144567045656 39.285045428189548 ;
+	setAttr ".t" -type "double3" -23.971616283155718 15.34267266455919 33.738172161544298 ;
 	setAttr ".r" -type "double3" -10.200000000000069 -31.600000000000936 0 ;
 	setAttr ".rpt" -type "double3" 2.8864940388462826e-16 3.7207904162536043e-17 -9.1027522880096862e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2A689A2D-4CEE-EEDD-9F5C-C2A2A1A0CEF2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 51.991556297217954;
+	setAttr ".coi" 45.374475469746919;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -4364,7 +4364,7 @@ createNode transform -n "group1" -p "barrel";
 	setAttr ".rpt" -type "double3" -3.3750779948604759e-14 -6.2172489379008766e-15 -2.5306146067549662e-14 ;
 	setAttr ".sp" -type "double3" 10.073729038238525 4.5726836919784546 -19.783612251281738 ;
 createNode fosterParent -n "Potted_PlantRNfosterParent1";
-	rename -uid "8721D248-4198-903A-E3BF-86AE8A691968";
+	rename -uid "99A53587-420D-FAC8-6688-CD99140FF142";
 createNode transform -n "Potted_Plant:transform1" -p "Potted_PlantRNfosterParent1";
 	rename -uid "F3C22FA9-45F7-22F0-C2A1-93AB61B38AB2";
 	setAttr ".v" no;
@@ -6168,7 +6168,7 @@ createNode reference -n "BarrelRN3";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "03EB8F86-4333-39B5-9BB3-858FD1873754";
+	rename -uid "14788002-4E68-C76E-E7F5-308634BB67E3";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -358.97003891241445 -1411.1110550385956 ;
 	setAttr ".tgi[0].vh" -type "double2" 6633.5729641852704 1135.7142405850564 ;
@@ -6387,4 +6387,4 @@ connectAttr "Potted_Plant:groupId23.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Potted_Plant:groupId24.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Potted_Plant:groupId25.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId29.msg" ":initialShadingGroup.gn" -na;
-// End of Room_Scene_KSmith.ma
+// End of Room_Scene_KSmith_copy.ma
