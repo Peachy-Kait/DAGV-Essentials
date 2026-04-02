@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Master_Scene_Kaitlyn_Smith.ma
-//Last modified: Fri, Mar 27, 2026 07:15:04 PM
+//Last modified: Fri, Mar 27, 2026 07:53:52 PM
 //Codeset: 1252
 file -rdi 1 -ns "Bookshelf_Bottom_Cabinet" -rfn "Bookshelf_Bottom_CabinetRN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Github/DAGV-Essentials/DAGV-Essentials/DAGV1100and1200/Maya//assets/Bookshelf_Bottom_Cabinet.ma";
@@ -91,18 +91,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "B3AC6542-43A7-62FE-9C88-4786D809FFB2";
+fileInfo "UUID" "68E71912-4F7D-C96A-9735-EF8360958925";
 createNode transform -s -n "persp";
 	rename -uid "F2D9500F-4E44-A00F-A358-0986417DAE1A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 19.273466825012441 24.310271278889886 53.428114068514191 ;
-	setAttr ".r" -type "double3" -19.799999999999532 14.000000000009788 0 ;
+	setAttr ".t" -type "double3" -61.530592086751753 17.259339938649099 47.963668578492531 ;
+	setAttr ".r" -type "double3" -10.199999999999871 -49.999999999999972 0 ;
 	setAttr ".rpt" -type "double3" 2.8864940388462826e-16 3.7207904162536043e-17 -9.1027522880096862e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2A689A2D-4CEE-EEDD-9F5C-C2A2A1A0CEF2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 66.369446946146667;
+	setAttr ".coi" 87.138604141039139;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -5431,7 +5431,7 @@ createNode reference -n "wall_with_stone_arch_doorRN";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "EFDE0A46-424D-9609-6E96-EB907EBA7276";
+	rename -uid "D86776AB-4DD0-45E9-B4FE-F9979912EA10";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -4283.2883873454921 -18834.919886488166 ;
 	setAttr ".tgi[0].vh" -type "double2" 68059.476329297948 18549.205612127142 ;
