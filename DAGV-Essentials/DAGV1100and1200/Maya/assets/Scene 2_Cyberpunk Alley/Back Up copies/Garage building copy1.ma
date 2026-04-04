@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: Garage building.ma
-//Last modified: Fri, Apr 03, 2026 09:33:37 PM
+//Name: Garage building copy1.ma
+//Last modified: Fri, Apr 03, 2026 09:35:01 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "04F96912-4941-5D5A-B2EE-F5BE41A5FACE";
+fileInfo "UUID" "35381394-4B12-35F9-201F-33A8BCB3815A";
 createNode transform -s -n "persp";
 	rename -uid "8BB57AC0-4070-8A97-3DE0-92A63B37ED87";
 	setAttr ".v" no;
@@ -146892,4 +146892,4 @@ connectAttr "Cyber_Texture_1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "groupId3.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId5.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId9.msg" ":initialShadingGroup.gn" -na;
-// End of Garage building.ma
+// End of Garage building copy1.ma
