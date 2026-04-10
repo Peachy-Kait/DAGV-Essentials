@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: Store-Front.ma
-//Last modified: Thu, Apr 09, 2026 07:12:02 PM
+//Name: Store-Front-copyfinished model.ma
+//Last modified: Thu, Apr 09, 2026 07:12:25 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "151AECE3-4345-841E-1CF5-559F0F7078AA";
+fileInfo "UUID" "195F2560-4531-0D77-286F-D58A5526F8DA";
 createNode transform -n "Store";
 	rename -uid "5B896EBD-41C5-4788-0F6F-E7AF6E4F3235";
 	setAttr ".rp" -type "double3" 3.1439213570684075 0.053378193379856498 9.7438181906846886 ;
@@ -56189,4 +56189,4 @@ connectAttr "groupId122.msg" ":initialShadingGroup.gn" -na;
 connectAttr "pSphereShape11.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "pSphereShape11.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "Payphone_backingShape.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
-// End of Store-Front.ma
+// End of Store-Front-copyfinished model.ma
